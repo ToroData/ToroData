@@ -17,29 +17,32 @@
 
 ## My skills 📜
 
-### Web technologies
+### Web technologies 🛡️
 
 - JavaScript
-
 - HTML
 - CSS
 - MySQL
 - PostgreSQL (data warehousing)
 
-### Application Development
+  
+### Application Development 📂
 
 - Python
 - C
   
-### Mathematics and statistics
+  
+### Mathematics and statistics 📊
 - R
 - Python
 - Matlab
   
-### Electronics
+  
+### Electronics 🔌
 - Arduino
   
-### Hacking
+  
+### Hacking ☠️
 - TheHarvester
 - Nmap/ Zenmap
 - Acunetix
