@@ -22,12 +22,23 @@
 - HTML
 - CSS
 - MySQL
-- PostgreSQL
+- PostgreSQL (data warehousing)
 
 ### Application Development
 
 - Python
 - C
+  
+### Mathematics and statistics
+- R
+- Python
+- Matlab
+  
+### Electronics
+- Arduino
+  
+### Hacking
+- TheHarvester
 
 ### Languages 🌐
 
@@ -38,4 +49,4 @@
 | Catalan         | Native language                                                           |
 
 </details>
----
+
