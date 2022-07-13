@@ -39,6 +39,20 @@
   
 ### Hacking
 - TheHarvester
+- Nmap/ Zenmap
+- Acunetix
+- Nessus
+- Nikto
+- Cmsmap
+- Wpscan
+- Joomscan
+- Zap
+- Burpsuite-pro
+- Metasploit
+- Craking (online and offline with hashcat, hydram ophcrack, metasploit, etc.)
+- Wifi (aircrack, airgeddong, Dos, deauthentication, evil twin atack, fake points access and MitM)
+  
+
 
 ### Languages 🌐
 
