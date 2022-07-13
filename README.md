@@ -8,3 +8,34 @@
 - 📫 You can reach me at torohack.github@gmail.com
 
 
+<details>
+<summary>
+  More stuff about me
+</summary>
+
+## My skills 📜
+
+### Web technologies
+
+- JavaScript
+
+- HTML
+- CSS
+- MySQL
+- PostgreSQL
+
+### Application Development
+
+- Python
+- C
+
+### Languages 🌐
+
+| Language      | Proficiency                                                               |
+| ------------- | ------------------------------------------------------------------------- |
+| English       | B2 ([UOC certified](https://seu-electronica.uoc.edu/es/tramites-servicios#verificador-documentos)) Key: 34805440871748ACAF10FC650D16796F|
+| Spanish        | Native language                                                           |
+| Catalan         | Native language                                                           |
+
+</details>
+---
