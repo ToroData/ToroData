@@ -1,4 +1,4 @@
-![Banner de Github](https://user-images.githubusercontent.com/109081430/178762711-7ef77a17-0f55-4402-b3b3-cdacd9001c92.png)
+![Banner de Github](https://user-images.githubusercontent.com/109081430/186784885-7d50d7f1-d51f-44ef-be13-169b009c5001.png)
 
 # Introducing myself
 
