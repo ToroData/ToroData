@@ -22,10 +22,13 @@
 - JavaScript
 - HTML
 - CSS
+
+### Back-end 🗄️
 - MySQL
 - PostgreSQL (data warehousing)
+- PHP: framework Laravel
+- Hosting
 
-  
 ### Application Development 📂
 
 - Python
