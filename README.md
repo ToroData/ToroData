@@ -12,6 +12,8 @@
 - 📈 I'm currently researching how to implement AI in a drone to collect data for implementation in a data science project for agriculture.
 - 📫 You can reach me at contact@torodata.es
 
+<!--START_SECTION:badges-->
+<!--END_SECTION:badges-->
 ---
 <details>
 <summary>
