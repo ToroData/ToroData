@@ -12,6 +12,7 @@
 - 📈 I'm currently researching how to implement AI in a drone to collect data for implementation in a data science project for agriculture.
 - 📫 You can reach me at contact@torodata.es
 
+# Certifications
 <!--START_SECTION:badges-->
 [![AWS Certified Cloud Practitioner](https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png)](http://www.credly.com/badges/448d655d-9a50-4f2f-b2ac-043e1f6d9cb3 "AWS Certified Cloud Practitioner")
 <!--END_SECTION:badges-->
