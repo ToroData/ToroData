@@ -1,5 +1,4 @@
 ![LinkedIn_header_1400x425_dark@2x](https://user-images.githubusercontent.com/109081430/211112892-c319916d-a410-4b9c-b657-08073fbb00fc.jpg)
-![Banner de Github](https://user-images.githubusercontent.com/109081430/186785164-57527345-66d9-4e92-a5aa-890533632084.png)
 # Introducing 
 
 
