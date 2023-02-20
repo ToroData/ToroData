@@ -13,6 +13,7 @@
 
 ## Certifications
 <!--START_SECTION:badges-->
+[![AWS Cloud Quest: Machine Learning](https://images.credly.com/size/110x110/images/d85070dc-b233-4848-9db4-c55319435b67/image.png)](http://www.credly.com/badges/03c7a16e-64c5-4e95-a9fc-cea453922d4f "AWS Cloud Quest: Machine Learning")
 [![AWS Cloud Quest: Serverless Developer](https://images.credly.com/size/110x110/images/9a2fd02b-52ab-448d-9d19-fd9b68efe1f6/image.png)](http://www.credly.com/badges/8dbc1074-e867-48cd-b24c-319644fbc153 "AWS Cloud Quest: Serverless Developer")
 [![AWS Cloud Quest: Solutions Architect](https://images.credly.com/size/110x110/images/9e9e7ef7-384f-4636-8743-1b89a68fb46b/image.png)](http://www.credly.com/badges/f5685706-a825-4338-b14e-97c1c227ab00 "AWS Cloud Quest: Solutions Architect")
 [![AWS Cloud Quest: Cloud Practitioner](https://images.credly.com/size/110x110/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png)](http://www.credly.com/badges/492394cc-71cc-4b41-a263-312326573e82 "AWS Cloud Quest: Cloud Practitioner")
