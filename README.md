@@ -13,6 +13,9 @@
 
 ## Certifications
 <!--START_SECTION:badges-->
+[![Deep Learning Essentials](https://images.credly.com/size/110x110/images/f4f08b45-aa38-4242-8b05-dcdac6811504/Deep_Learning_Essentials.png)](http://www.credly.com/badges/255bcabe-ce10-4d71-885e-ae9cb5021c5b "Deep Learning Essentials")
+[![Data Science Tools](https://images.credly.com/size/110x110/images/de9471ce-018c-4bf4-af49-5c9c1d488613/Data_Science_Tools.png)](http://www.credly.com/badges/141b2163-7fb6-4238-962e-380fd269d119 "Data Science Tools")
+[![Data Analysis Using Python](https://images.credly.com/size/110x110/images/ba34cb1c-4344-43f5-9685-55e2e901c0f0/Data_Analysis_using_Python.png)](http://www.credly.com/badges/b7a37451-c8cd-4c18-895e-e3188bcc272e "Data Analysis Using Python")
 [![AWS Certified Solutions Architect – Associate](https://images.credly.com/size/110x110/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png)](http://www.credly.com/badges/cbdbbe50-1da4-4c35-80cb-86a8250932eb "AWS Certified Solutions Architect – Associate")
 [![AWS Cloud Quest: Data Analytics](https://images.credly.com/size/110x110/images/2cd965b0-5f5d-4510-ab05-cfa2f80342a1/image.png)](http://www.credly.com/badges/1ecbd5fd-3ffd-4160-b41c-b85c2cd9ed36 "AWS Cloud Quest: Data Analytics")
 [![AWS Cloud Quest: Machine Learning](https://images.credly.com/size/110x110/images/d85070dc-b233-4848-9db4-c55319435b67/image.png)](http://www.credly.com/badges/03c7a16e-64c5-4e95-a9fc-cea453922d4f "AWS Cloud Quest: Machine Learning")
