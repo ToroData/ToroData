@@ -13,6 +13,7 @@
 
 ## Certifications
 <!--START_SECTION:badges-->
+[![Data Analytics Essentials](https://images.credly.com/size/110x110/images/1fdfeaeb-e61c-4450-bdfe-a07bd4e715df/image.png)](http://www.credly.com/badges/cfb0e91e-38be-4a49-92a0-2b5d754b3c92 "Data Analytics Essentials")
 [![Deep Learning Essentials](https://images.credly.com/size/110x110/images/f4f08b45-aa38-4242-8b05-dcdac6811504/Deep_Learning_Essentials.png)](http://www.credly.com/badges/255bcabe-ce10-4d71-885e-ae9cb5021c5b "Deep Learning Essentials")
 [![Data Science Tools](https://images.credly.com/size/110x110/images/de9471ce-018c-4bf4-af49-5c9c1d488613/Data_Science_Tools.png)](http://www.credly.com/badges/141b2163-7fb6-4238-962e-380fd269d119 "Data Science Tools")
 [![Data Analysis Using Python](https://images.credly.com/size/110x110/images/ba34cb1c-4344-43f5-9685-55e2e901c0f0/Data_Analysis_using_Python.png)](http://www.credly.com/badges/b7a37451-c8cd-4c18-895e-e3188bcc272e "Data Analysis Using Python")
