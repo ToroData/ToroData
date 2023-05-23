@@ -11,6 +11,9 @@
 - 📈 I'm currently researching how to implement AI in a drone to collect data for implementation in a data science project for agriculture.
 - 📫 You can reach me at rraigadag@uoc.es
 
+![Profile Views](https://komarev.com/ghpvc/?username=ToroData)
+
+
 ## Certifications
 <!--START_SECTION:badges-->
 [![Data Analytics Essentials](https://images.credly.com/size/110x110/images/1fdfeaeb-e61c-4450-bdfe-a07bd4e715df/image.png)](http://www.credly.com/badges/cfb0e91e-38be-4a49-92a0-2b5d754b3c92 "Data Analytics Essentials")
