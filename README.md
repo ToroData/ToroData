@@ -16,6 +16,14 @@
 
 ## Certifications
 <!--START_SECTION:badges-->
+<!-- <a href="https://www.datacamp.com/certificate/DSA0011411543472">
+  <div align="center">
+      <img src="https://thedatascientist.digital/img/data_scientist_associate_banner.png" alt="Logo" width="25%">
+  </div>
+ </a> -->
+ 
+ 
+[![DataCamp Data Scientist Associate Certification](https://thedatascientist.digital/img/data_scientist_associate_banner.png)](https://www.datacamp.com/certificate/DSA0011411543472 "Data Scientist Associate")
 [![Data Analytics Essentials](https://images.credly.com/size/110x110/images/1fdfeaeb-e61c-4450-bdfe-a07bd4e715df/image.png)](http://www.credly.com/badges/cfb0e91e-38be-4a49-92a0-2b5d754b3c92 "Data Analytics Essentials")
 [![Deep Learning Essentials](https://images.credly.com/size/110x110/images/f4f08b45-aa38-4242-8b05-dcdac6811504/Deep_Learning_Essentials.png)](http://www.credly.com/badges/255bcabe-ce10-4d71-885e-ae9cb5021c5b "Deep Learning Essentials")
 [![Data Science Tools](https://images.credly.com/size/110x110/images/de9471ce-018c-4bf4-af49-5c9c1d488613/Data_Science_Tools.png)](http://www.credly.com/badges/141b2163-7fb6-4238-962e-380fd269d119 "Data Science Tools")
