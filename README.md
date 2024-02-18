@@ -17,6 +17,8 @@
 
 ## Certifications
 <!--START_SECTION:badges-->
+[![AWS Knowledge: Amazon Braket](https://images.credly.com/size/110x110/images/cb9ef1ba-f010-4a39-881b-65dce3e5df68/image.png)](http://www.credly.com/badges/1aba1815-dfe9-46e2-bfd0-d6a68e9d1a42 "AWS Knowledge: Amazon Braket")
+[![Basics of Quantum Information](https://images.credly.com/size/110x110/images/60cbe993-f35f-4b98-b7f6-8cd51233fe2a/image.png)](http://www.credly.com/badges/98eddf53-7646-4cae-a071-206f78fae5d7 "Basics of Quantum Information")
 [![Data Analytics Essentials](https://images.credly.com/size/110x110/images/1fdfeaeb-e61c-4450-bdfe-a07bd4e715df/image.png)](http://www.credly.com/badges/cfb0e91e-38be-4a49-92a0-2b5d754b3c92 "Data Analytics Essentials")
 [![Deep Learning Essentials](https://images.credly.com/size/110x110/images/f4f08b45-aa38-4242-8b05-dcdac6811504/Deep_Learning_Essentials.png)](http://www.credly.com/badges/255bcabe-ce10-4d71-885e-ae9cb5021c5b "Deep Learning Essentials")
 [![Data Science Tools](https://images.credly.com/size/110x110/images/de9471ce-018c-4bf4-af49-5c9c1d488613/Data_Science_Tools.png)](http://www.credly.com/badges/141b2163-7fb6-4238-962e-380fd269d119 "Data Science Tools")
