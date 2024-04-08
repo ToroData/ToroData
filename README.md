@@ -17,6 +17,7 @@
 
 ## Certifications
 <!--START_SECTION:badges-->
+[![Practical Introduction to Quantum-Safe Cryptography](https://images.credly.com/size/110x110/images/53629652-f0f2-4bc8-abfd-444c366d3cf6/image.png)](http://www.credly.com/badges/7524afc6-ac2c-425b-b594-c916c8b9d5c9 "Practical Introduction to Quantum-Safe Cryptography")
 [![AWS Knowledge: Amazon Braket](https://images.credly.com/size/110x110/images/cb9ef1ba-f010-4a39-881b-65dce3e5df68/image.png)](http://www.credly.com/badges/1aba1815-dfe9-46e2-bfd0-d6a68e9d1a42 "AWS Knowledge: Amazon Braket")
 [![Basics of Quantum Information](https://images.credly.com/size/110x110/images/60cbe993-f35f-4b98-b7f6-8cd51233fe2a/image.png)](http://www.credly.com/badges/98eddf53-7646-4cae-a071-206f78fae5d7 "Basics of Quantum Information")
 [![Data Analytics Essentials](https://images.credly.com/size/110x110/images/1fdfeaeb-e61c-4450-bdfe-a07bd4e715df/image.png)](http://www.credly.com/badges/cfb0e91e-38be-4a49-92a0-2b5d754b3c92 "Data Analytics Essentials")
