@@ -4,13 +4,13 @@
 
 - 👋 Hi, I’m @TheDataScientist
 - 💡 My personal website is https://thedatascientist.digital
-- 👀 I’m interested in Data Science and Software Development
+- 👀 I’m interested in Data Science and Quantum Machine Learning
 - ☁️ I’m an AWS Certified Solutions Architect 
 - 🌱 I’m currently learning about various skills of a software developer and data scientist. Currently, studying applied data science at Univeritat Oberta de Catalunya - UOC
 - 💞️ I’m looking to collaborate on data science projects
 - 📈 I'm currently researching how to implement AI in quantum computers.
 - 📖 Read me on https://medium.com/@ricardraigada
-- 📫 You can reach me at rraigadag@uoc.es
+- 📫 You can reach me at ricard.raigada@ieee.org
 
 ![Profile Views](https://komarev.com/ghpvc/?username=ToroData)
 
