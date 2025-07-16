@@ -1,21 +1,45 @@
 ![LinkedIn_header_1400x425_dark@2x](https://user-images.githubusercontent.com/109081430/211112892-c319916d-a410-4b9c-b657-08073fbb00fc.jpg)
-# Introducing 
 
+# 👋 ToroData (Ricard Santiago Raigada García)
 
-- 👋 Hi, I’m @TheDataScientist
-- 💡 My personal website is https://thedatascientist.digital
-- 👀 I’m interested in Data Science and Quantum Machine Learning
-- ☁️ I’m an AWS Certified Solutions Architect 
-- 🌱 I'm pursuing a Master's degree in Computer Engineering at - UOC
-- 💞️ I’m looking to collaborate on data science projects
-- 📈 I'm currently researching how to implement AI in quantum computers.
-- 📖 Read me on https://medium.com/@ricardraigada
-- 📫 You can reach me at ricard.raigada@ieee.org
+**Data Scientist & ML Engineer | AWS Cloud Architect | Quantum Computing**
 
-![Profile Views](https://komarev.com/ghpvc/?username=ToroData)
+---
 
+## About Me
+
+I am a Data Scientist and Machine Learning Engineer with a Master's in Computer Engineering and advanced training in quantum mechanics and quantum information theory. My professional experience spans machine learning, deep learning, and data analytics, with a strong focus on cloud architecture and scalable solutions using AWS. My thesis work and research have centered on quantum database architectures and the integration of quantum principles into data science. I also contribute technical content as a writer and am recognized for my work in AI and autonomous systems.
+
+- **Education:** MSc Computer Engineering (UOC), advanced programs at MIT & Stanford
+- **Quantum Focus:** Academic background in quantum mechanics, quantum optics, quantum information
+- **Cloud:** AWS Solutions Architect (EC2, S3, RDS, Lambda, DynamoDB, SageMaker, Step Functions)
+- **Languages:** English (B2, UOC certified), Spanish (Native), Catalan (Native)
+- **Mobility:** Open to opportunities in the US (Texas), Germany, Switzerland, UK
+
+---
+
+## Skills
+
+- **Programming:** Python, Jupyter Notebook
+- **Machine Learning:** Neural Networks, Deep Learning, Image Classification, Data Mining, Data Visualization
+- **Quantum Computing:** Quantum mechanics, quantum database architecture, quantum algorithms
+- **Cloud Solutions:** AWS architecture, serverless, deployment, security, automation
+- **Mathematics:** Applied topology, category theory
+
+---
+
+## Featured Projects
+
+### [Machine-Learning-Engineer](https://github.com/ToroData/Machine-Learning-Engineer)
+Several ML and DL projects, including neural network training, image classification with AWS SageMaker, and ML workflow automation using Step Functions.
+
+### [Quantum-Database-Architecture-for-the-Quantum-Data-Scientist-Thesis](https://github.com/ToroData/Quantum-Database-Architecture-for-the-Quantum-Data-Scientist-Thesis)
+Thesis repository: Quantum Database Architecture integrating multi-level atomic ensembles, Lindblad operators, EIT, and high-fidelity data encoding for ethical, secure, scalable data science.
+
+---
 
 ## Certifications
+
 <!--START_SECTION:badges-->
 [![Practical Introduction to Quantum-Safe Cryptography](https://images.credly.com/size/110x110/images/53629652-f0f2-4bc8-abfd-444c366d3cf6/image.png)](http://www.credly.com/badges/7524afc6-ac2c-425b-b594-c916c8b9d5c9 "Practical Introduction to Quantum-Safe Cryptography")
 [![AWS Knowledge: Amazon Braket](https://images.credly.com/size/110x110/images/cb9ef1ba-f010-4a39-881b-65dce3e5df68/image.png)](http://www.credly.com/badges/1aba1815-dfe9-46e2-bfd0-d6a68e9d1a42 "AWS Knowledge: Amazon Braket")
@@ -32,67 +56,38 @@
 [![AWS Cloud Quest: Cloud Practitioner](https://images.credly.com/size/110x110/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png)](http://www.credly.com/badges/492394cc-71cc-4b41-a263-312326573e82 "AWS Cloud Quest: Cloud Practitioner")
 [![AWS Certified Cloud Practitioner](https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png)](http://www.credly.com/badges/de0cbdf9-2942-4f1a-8750-ef4aac14c209 "AWS Certified Cloud Practitioner")
 <!--END_SECTION:badges-->
+
 ---
-<details>
-<summary>
-  More stuff about me
-</summary>
 
-## My skills 📜
+## Publications
 
-### Web technologies 🛡️
+### [Emergent Geometrodynamic Intelligence in Transformers: Lagrangian Dynamics, Gauge Symmetries, and Holographic Emergence](https://doi.org/10.5281/zenodo.15772617)  
+*Universitat Oberta de Catalunya · Jun 30, 2025*  
+A unified framework treating large language models as physical systems, showing connections between optimization, information geometry, gauge symmetries, and holography. Proposes “Emergent Geometrodynamic Intelligence” as a paradigm for AI architectures.
 
-- JavaScript
-- HTML
-- CSS
-- AWS
+### [Symmetries in Quantum Mechanics: from Klein-Gordon Equation to Higgs Mechanism](https://zenodo.org/records/14774610)  
+*MITx 8.06x · Jan 30, 2025*  
+Explores the role of symmetry in quantum mechanics and field theory, tracing developments from the Klein-Gordon equation to spontaneous symmetry breaking and the Higgs mechanism.
 
-### Back-end 🗄️
-- MySQL
-- PostgreSQL (data warehousing)
-- PHP: framework Laravel
-- Hosting
+### [Quantum Database Architecture for the Quantum Data Scientist](https://doi.org/10.5281/zenodo.14810946)  
+*Universitat Oberta de Catalunya (UOC) · Jan 7, 2025*  
+Thesis on quantum memory, quantum data encoding, and secure data management, integrating quantum mechanics, optics, and ethical Big Data practices.
 
-### Application Development 📂
+### [Quantum Data Scientist: The New Role of the 21st Century](https://www.computer.org/publications/tech-news/trends/quantum-data-scientist/)  
+*IEEE Computer Society · Jun 24, 2024*  
+Analysis of the evolving role of quantum data scientists and the impact of quantum computing on optimization, medicine, and machine learning.
 
-- Python
-- C
-  
-  
-### Mathematics and statistics 📊
-- R
-- Python
-- Matlab
-  
-  
-### Electronics 🔌
-- Arduino
-  
-  
-### Hacking ☠️
-- TheHarvester
-- Nmap/ Zenmap
-- Acunetix
-- Nessus
-- Nikto
-- Cmsmap
-- Wpscan
-- Joomscan
-- Zap
-- Burpsuite-pro
-- Metasploit
-- Craking (online and offline with hashcat, hydram ophcrack, metasploit, etc.)
-- Wifi (aircrack, airgeddong, Dos, deauthentication, evil twin atack, fake points access and MitM)
-  
+---
 
+## Interests
 
-### Languages 🌐
+- Quantum mechanics & quantum computing
+- Applied topology & category theory
+- Cloud architecture & ML workflows
+- AI, autonomous systems & robotics
 
-| Language      | Proficiency                                                               |
-| ------------- | ------------------------------------------------------------------------- |
-| English       | B2 ([UOC certified](https://seu-electronica.uoc.edu/es/tramites-servicios#verificador-documentos)) Key: 34805440871748ACAF10FC650D16796F|
-| Spanish        | Native language                                                           |
-| Catalan         | Native language                                                           |
+---
 
-</details>
+## Connect
 
+- [LinkedIn](https://www.linkedin.com/in/ricard-santiago-raigada-garc%C3%ADa/)
