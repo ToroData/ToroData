@@ -1,4 +1,4 @@
-# Ricard S. García-Raigada — academic website
+# Ricard S. Raigada-García — academic website
 
 Static site (HTML + CSS, no build step). Hosted on GitHub Pages.
 
