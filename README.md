@@ -8,7 +8,7 @@
 
 <p align="center">
   <strong>PhD Candidate</strong><br>
-  Universitat Politécnica de Catalunya (UPC)<br>
+  Universitat Politècnica de Catalunya (UPC)<br>
   Barcelona Supercomputing Center (BSC)<br>
   <em>Accelerators &amp; Communications for HPC (AccelCom)</em><br>
   Barcelona, Spain
@@ -26,7 +26,7 @@
 
 ## About
 
-I am a PhD candidate at the **Universitat Politécnica de Catalunya (UPC)** and the **Barcelona Supercomputing Center (BSC)**, where I am part of the *Accelerators and Communications for HPC* (AccelCom) group. My research focuses on the integration of **quantum processors into high-performance computing**: how to schedule, distribute and orchestrate quantum workloads alongside classical resources in a supercomputing centre.
+I am a PhD candidate at the **Universitat Politècnica de Catalunya (UPC)** and the **Barcelona Supercomputing Center (BSC)**, where I am part of the *Accelerators and Communications for HPC* (AccelCom) group. My research focuses on the integration of **quantum processors into high-performance computing**: how to schedule, distribute and orchestrate quantum workloads alongside classical resources in a supercomputing centre.
 
 My background combines physics and computer engineering: an MSc in Computer Engineering and an MSc in Advanced Physics, studies in Data Science, together with the MIT MicroMasters in Statistics and Data Science. Before the PhD I worked as a data scientist and machine learning engineer on cloud-native (AWS) systems.
 
@@ -79,13 +79,13 @@ Conferences, workshops and poster sessions.
 
 | When | Position |
 |---|---|
-| 2026 – present | **PhD Candidate** — Barcelona Supercomputing Center · Universitat Politécnica de Catalunya<br>AccelCom group. Runtime systems and scheduling for hybrid HPC–quantum infrastructures. |
+| 2026 – present | **PhD Candidate** — Barcelona Supercomputing Center · Universitat Politècnica de Catalunya<br>AccelCom group. Runtime systems and scheduling for hybrid HPC–quantum infrastructures. |
 
 ## Education
 
 | When | Degree |
 |---|---|
-| 2026 – present | **PhD** — Universitat Politécnica de Catalunya (UPC) |
+| 2026 – present | **PhD** — Universitat Politècnica de Catalunya (UPC) |
 | 2025 – 2026 | **MSc in Advanced Physics** — UNED, Madrid |
 | 2025 | **Data Science** — Universitat Oberta de Catalunya (UOC)<br>Thesis: *Quantum Database Architecture for the Quantum Data Scientist*. |
 | | **MSc in Computer Engineering** — Universitat Oberta de Catalunya (UOC) |
