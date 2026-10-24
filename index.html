@@ -3,86 +3,175 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ricard S. Raigada-García · PhD Candidate</title>
-  <meta name="description" content="Ricard Santiago Raigada García — PhD candidate at UPC and the Barcelona Supercomputing Center (AccelCom group). Research on hybrid HPC–quantum systems.">
+  <title>Ricard Santiago Raigada García · PhD candidate in hybrid HPC–quantum systems (UPC · BSC)</title>
+  <meta name="description" content="Ricard Santiago Raigada García (Ricard S. Raigada-García) is a PhD candidate at UPC working in the AccelCom group of the Barcelona Supercomputing Center on runtimes and scheduling for hybrid HPC–quantum systems.">
   <meta name="author" content="Ricard Santiago Raigada García">
+  <link rel="canonical" href="https://raigada-garcia.dev/">
 
-  <!-- Social previews (when you share the link) -->
-  <meta property="og:title" content="Ricard S. Raigada-García · PhD Candidate">
-  <meta property="og:description" content="Hybrid HPC–quantum systems · UPC & Barcelona Supercomputing Center (AccelCom)">
-  <meta property="og:image" content="assets/photo.png">
+  <!-- Social previews -->
   <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://raigada-garcia.dev/">
+  <meta property="og:title" content="Ricard Santiago Raigada García · PhD candidate">
+  <meta property="og:description" content="Runtimes and scheduling for hybrid HPC–quantum systems · UPC & Barcelona Supercomputing Center (AccelCom)">
+  <meta property="og:image" content="https://raigada-garcia.dev/assets/img/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portrait of Ricard Santiago Raigada García next to his name and research area, hybrid HPC–quantum systems.">
+  <meta property="profile:first_name" content="Ricard">
+  <meta property="profile:last_name" content="Raigada García">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" href="assets/photo.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="style.css?v=2">
 
-  <!-- Structured data: helps Google link this page to your ORCID / GitHub -->
+  <!-- Structured data: one entity for every spelling of the name -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ricard Santiago Raigada García",
-    "alternateName": "Ricard S. Raigada-García",
-    "jobTitle": "PhD Candidate",
-    "affiliation": [
-      {"@type": "Organization", "name": "Universitat Politècnica de Catalunya (UPC)"},
-      {"@type": "Organization", "name": "Barcelona Supercomputing Center (BSC)"}
-    ],
-    "sameAs": [
-      "https://orcid.org/0009-0009-9684-4745",
-      "https://github.com/ToroData",
-      "https://www.linkedin.com/in/ricard-santiago-raigada-garcia/"
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://raigada-garcia.dev/#page",
+        "url": "https://raigada-garcia.dev/",
+        "name": "Ricard Santiago Raigada García",
+        "dateModified": "2026-10-24",
+        "mainEntity": { "@id": "https://raigada-garcia.dev/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://raigada-garcia.dev/#person",
+        "name": "Ricard Santiago Raigada García",
+        "givenName": "Ricard",
+        "additionalName": "Santiago",
+        "familyName": "Raigada García",
+        "alternateName": [
+          "Ricard S. Raigada-García",
+          "Ricard Santiago Raigada",
+          "Ricard Raigada García",
+          "R. S. Raigada García",
+          "R. S. Raigada-García",
+          "Ricard García-Raigada"
+        ],
+        "url": "https://raigada-garcia.dev/",
+        "image": "https://raigada-garcia.dev/assets/img/ricard-santiago-raigada-garcia-800.webp",
+        "jobTitle": "PhD candidate",
+        "description": "PhD candidate working on runtimes and scheduling for hybrid HPC–quantum systems.",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "ORCID",
+          "value": "0009-0009-9684-4745"
+        },
+        "affiliation": [
+          { "@type": "CollegeOrUniversity", "name": "Universitat Politècnica de Catalunya", "alternateName": "UPC", "url": "https://www.upc.edu/" },
+          { "@type": "ResearchOrganization", "name": "Barcelona Supercomputing Center", "alternateName": "BSC-CNS", "url": "https://www.bsc.es/" }
+        ],
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Universitat Oberta de Catalunya", "alternateName": "UOC" },
+          { "@type": "CollegeOrUniversity", "name": "Universidad Nacional de Educación a Distancia", "alternateName": "UNED" }
+        ],
+        "knowsAbout": [
+          "Hybrid HPC–quantum computing",
+          "Quantum-centric supercomputing",
+          "Quantum circuit cutting",
+          "Job scheduling and resource management",
+          "Runtime systems",
+          "Distributed quantum circuit simulation"
+        ],
+        "knowsLanguage": ["ca", "es", "en"],
+        "homeLocation": { "@type": "Place", "name": "Barcelona, Spain" },
+        "sameAs": [
+          "https://orcid.org/0009-0009-9684-4745",
+          "https://github.com/ToroData",
+          "https://www.linkedin.com/in/ricard-santiago-raigada-garcia/"
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems",
+        "datePublished": "2026",
+        "url": "https://arxiv.org/abs/2604.15279",
+        "author": [
+          { "@id": "https://raigada-garcia.dev/#person" },
+          { "@type": "Person", "name": "Josep Jorba" },
+          { "@type": "Person", "name": "Sergio Iserte" }
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation",
+        "datePublished": "2026-10-07",
+        "isPartOf": { "@type": "PublicationVolume", "name": "arXiv preprint arXiv:2610.09659" },
+        "url": "https://arxiv.org/abs/2610.09659",
+        "author": [
+          { "@type": "Person", "name": "Íñigo Aréjula-Aísa" },
+          { "@type": "Person", "name": "Sergio Iserte" },
+          { "@type": "Person", "name": "Petter Sandås" },
+          { "@id": "https://raigada-garcia.dev/#person" },
+          { "@type": "Person", "name": "Antonio J Peña" }
+        ]
+      }
     ]
   }
   </script>
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header class="topbar">
   <a class="brand" href="#top">R. S. Raigada-García</a>
   <nav class="nav" aria-label="Sections">
     <a href="#about">About</a>
+    <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#talks">Talks</a>
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
+    <a href="research-map.html">Research map</a>
   </nav>
 </header>
 
 <div class="layout" id="top">
 
   <!-- ============ SIDEBAR / PROFILE CARD ============ -->
-  <aside class="profile">
-    <img class="photo" src="assets/photo.png" alt="Portrait of Ricard Santiago Raigada García" width="200" height="200">
+  <aside class="profile" aria-label="Profile">
+    <picture>
+      <source type="image/webp"
+              srcset="assets/img/ricard-santiago-raigada-garcia-400.webp 400w, assets/img/ricard-santiago-raigada-garcia-800.webp 800w"
+              sizes="190px">
+      <img class="photo" src="assets/img/ricard-santiago-raigada-garcia-400.jpg"
+           alt="Black-and-white portrait of Ricard Santiago Raigada García, smiling, in a white T-shirt."
+           width="400" height="400" fetchpriority="high" decoding="async">
+    </picture>
     <h1 class="name">Ricard Santiago <br>Raigada García</h1>
     <p class="role">PhD Candidate</p>
     <p class="affil">
-      Universitat Politècnica de Catalunya (UPC)<br>
+      <span lang="ca">Universitat Politècnica de Catalunya</span> (UPC)<br>
       Barcelona Supercomputing Center (BSC)<br>
       <span class="muted">Accelerators &amp; Communications for HPC (AccelCom)</span>
     </p>
     <p class="loc">Barcelona, Spain</p>
 
     <ul class="links">
-      <li><a href="https://orcid.org/0009-0009-9684-4745" target="_blank" rel="noopener">
+      <li><a href="https://orcid.org/0009-0009-9684-4745" rel="me">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#A6CE39"/><path fill="#fff" d="M8.3 17.3H6.9V7.7h1.4v9.6zm2.1-9.6h3.7c3.6 0 5.2 2.6 5.2 4.8 0 2.4-1.9 4.8-5.2 4.8h-3.7V7.7zm1.4 8.3h2.2c3.2 0 3.9-2.4 3.9-3.5 0-1.8-1.1-3.5-3.9-3.5h-2.2v7zM8.5 5.7a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0z"/></svg>
         ORCID</a></li>
-      <li><a href="https://arxiv.org/search/?searchtype=author&amp;query=Garc%C3%ADa-Raigada%2C+Ricard" target="_blank" rel="noopener">
+      <li><a href="https://arxiv.org/search/?searchtype=author&amp;query=Raigada-Garc%C3%ADa%2C+Ricard">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm3.5 4 4 5-4 5h2.3l2.9-3.6 2.9 3.6h2.3l-4-5 4-5h-2.3l-2.9 3.6L9.8 7z"/></svg>
         arXiv</a></li>
-      <li><a href="https://github.com/ToroData" target="_blank" rel="noopener">
+      <li><a href="https://github.com/ToroData" rel="me">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
         GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/ricard-santiago-raigada-garcia/" target="_blank" rel="noopener">
+      <li><a href="https://www.linkedin.com/in/ricard-santiago-raigada-garcia/" rel="me">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2zM8 19H5V9.5h3V19zM6.5 8.2a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5zM19 19h-3v-4.6c0-1.1 0-2.5-1.5-2.5S12.8 13 12.8 14.3V19h-3V9.5h2.8v1.3c.4-.8 1.4-1.5 2.9-1.5 3 0 3.6 2 3.6 4.6V19z"/></svg>
         LinkedIn</a></li>
-      <!-- TODO: add your institutional email (e.g. name.surname@bsc.es) and Google Scholar when you have them:
-      <li><a href="mailto:YOUR_EMAIL@bsc.es">Email</a></li>
-      <li><a href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Google Scholar</a></li>
-      -->
+      <li><a href="mailto:ricard.santiago.raigada@upc.edu">Email</a></li>
+      <li><a href="https://scholar.google.com/citations?user=n6cqJmIAAAAJ&hl=en" rel="me">Google Scholar</a></li>
+     
     </ul>
 
     <a class="btn" id="cv-btn" href="cv.pdf" download>
@@ -92,41 +181,107 @@
   </aside>
 
   <!-- ============ MAIN CONTENT ============ -->
-  <main class="content">
+  <main class="content" id="main">
 
     <section id="about">
       <h2>About</h2>
       <p>
-        I am a PhD candidate at the <strong>Universitat Politècnica de Catalunya (UPC)</strong> and the
-        <strong>Barcelona Supercomputing Center (BSC)</strong>, where I am part of the
-        <em>Accelerators and Communications for HPC</em> (AccelCom) group.
-        My research focuses on the integration of <strong>quantum processors into high-performance computing</strong>:
+        I am a PhD candidate at the <strong lang="ca">Universitat Politècnica de Catalunya</strong> (UPC) and work in the
+        <em>Accelerators and Communications for HPC</em> (AccelCom) group of the
+        <strong>Barcelona Supercomputing Center</strong> (BSC).
+        My research is about integrating <strong>quantum processors into high-performance computing</strong>:
         how to schedule, distribute and orchestrate quantum workloads alongside classical resources in a supercomputing centre.
       </p>
       <p>
-        My background combines physics and computer engineering: an MSc in Computer Engineering and
-        an MSc in Advanced Physics, studies in Data Science, together with the MIT MicroMasters in Statistics and Data Science.
+        My background combines physics and computer engineering: an MSc in Computer Engineering,
+        studies in Advanced Physics and Data Science, and the MIT MicroMasters in Statistics and Data Science.
         Before the PhD I worked as a data scientist and machine learning engineer on cloud-native (AWS) systems.
       </p>
+      <p class="note">Publications list me as Ricard S. Raigada-García or R. S. Raigada García.</p>
 
       <h3>Research interests</h3>
       <ul class="tags">
         <li>Hybrid HPC–quantum computing</li>
+        <li>Quantum-centric supercomputing</li>
         <li>Quantum circuit cutting</li>
         <li>Scheduling &amp; resource management</li>
-        <li>Distributed quantum workloads</li>
+        <li>Distributed quantum simulation</li>
         <li>Quantum software stacks</li>
-        <li>Machine learning for systems</li>
       </ul>
+    </section>
+
+    <section id="research" aria-labelledby="research-h">
+      <h2 id="research-h">Research lines</h2>
+      <p class="note">
+        What I am working on now. Published work links to its paper; ongoing work is described by the question it addresses.
+        The <a href="research-map.html">research map</a> shows how these lines connect.
+      </p>
+
+      <article class="rline">
+        <h3 class="rline-title">Quantum work under HPC resource management</h3>
+        <p class="rline-status"><span class="badge">Public</span> Preprint and ACM ICS 2026 poster</p>
+        <p>
+          Quantum jobs usually bypass the scheduler that runs the rest of a supercomputer.
+          I build runtimes that turn quantum work into units the centre’s resource manager can queue, route and recover,
+          across local QPUs, remote QPUs and classical simulators.
+        </p>
+        <p class="rline-links"><a href="#pub-dqr">See the publication</a></p>
+      </article>
+
+      <article class="rline">
+        <h3 class="rline-title">Adaptive resources for quantum workloads</h3>
+        <p class="rline-status"><span class="badge badge-quiet">Ongoing</span> Manuscripts in preparation</p>
+        <p>
+          Large quantum simulations and long hybrid quantum–classical campaigns need different resources at different moments,
+          and a shared machine changes what it can offer over time.
+          This line studies how such workloads can adapt to the allocation available while they run, and survive interruptions.
+        </p>
+      </article>
+
+      <article class="rline">
+        <h3 class="rline-title">Data movement in distributed quantum simulation</h3>
+        <p class="rline-status"><span class="badge badge-quiet">Ongoing</span></p>
+        <p>
+          When a quantum state is spread across many nodes, communication between them often dominates the runtime.
+          I study which decisions taken before a run determine that cost, and how a system can make them automatically.
+        </p>
+      </article>
+
+      <article class="rline">
+        <h3 class="rline-title">The integration layer of quantum-centric supercomputing</h3>
+        <p class="rline-status"><span class="badge badge-quiet">Doctoral thesis</span> In progress</p>
+        <p>
+          Coupling quantum processors to a supercomputer raises a systems question: where should coordination between
+          classical and quantum resources live, and what should it cost? My doctoral thesis addresses this layer.
+        </p>
+      </article>
     </section>
 
     <section id="publications">
       <h2>Publications</h2>
-      <p class="note">Full list on <a href="https://orcid.org/0009-0009-9684-4745" target="_blank" rel="noopener">ORCID</a>.</p>
+      <p class="note">Full list on <a href="https://orcid.org/0009-0009-9684-4745">ORCID</a>.</p>
 
       <h3>Preprints</h3>
       <ol class="pubs">
-        <li class="pub">
+        <li class="pub" id="pub-qubit-placement">
+          <span class="year">2026</span>
+          <div>
+            <p class="pub-title">Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation</p>
+            <p class="pub-authors">Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, <span class="me">Ricard S. Raigada-García</span>, Antonio J. Peña</p>
+            <p class="pub-venue">arXiv preprint arXiv:2610.09659 · 7 October 2026</p>
+            <p class="pub-abstract">
+              A communication-aware qubit-layout framework that reduces inter-node data exchange while selecting the
+              number of computational nodes automatically. Integrated into QuCSLO, it supports dynamic node scaling,
+              OpenQASM parsing and QuEST; evaluations on synthetic and QASMBench circuits show fewer communication
+              cuts and runtime speedups above 2× over identity layouts, particularly for highly entangled circuits.
+            </p>
+            <p class="pub-links">
+              <a href="https://arxiv.org/abs/2610.09659">arXiv<span class="sr-only">: Communication-Aware Qubit Placement</span></a>
+              <a href="https://arxiv.org/pdf/2610.09659">PDF<span class="sr-only">: Communication-Aware Qubit Placement</span></a>
+            </p>
+          </div>
+        </li>
+        <li class="pub" id="pub-dqr">
           <span class="year">2026</span>
           <div>
             <p class="pub-title">Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</p>
@@ -138,8 +293,8 @@
               local QPU and the remote IBM Torino backend, with per-fragment failover to classical simulators.
             </p>
             <p class="pub-links">
-              <a href="https://arxiv.org/abs/2604.15279" target="_blank" rel="noopener">arXiv</a>
-              <a href="https://arxiv.org/pdf/2604.15279" target="_blank" rel="noopener">PDF</a>
+              <a href="https://arxiv.org/abs/2604.15279">arXiv<span class="sr-only">: Wave-Based Dispatch for Circuit Cutting</span></a>
+              <a href="https://arxiv.org/pdf/2604.15279">PDF<span class="sr-only">: Wave-Based Dispatch for Circuit Cutting</span></a>
             </p>
           </div>
         </li>
@@ -153,7 +308,7 @@
             <p class="pub-title">Emergent Geometrodynamic Intelligence in Transformers: Lagrangian Dynamics, Gauge Symmetries, and Holographic Emergence</p>
             <p class="pub-authors"><span class="me">R. S. Raigada García</span></p>
             <p class="pub-venue">Universitat Oberta de Catalunya · Zenodo</p>
-            <p class="pub-links"><a href="https://doi.org/10.5281/zenodo.15772617" target="_blank" rel="noopener">DOI</a></p>
+            <p class="pub-links"><a href="https://doi.org/10.5281/zenodo.15772617">DOI<span class="sr-only">: Emergent Geometrodynamic Intelligence in Transformers</span></a></p>
           </div>
         </li>
         <li class="pub">
@@ -161,11 +316,11 @@
           <div>
             <p class="pub-title">Quantum Database Architecture for the Quantum Data Scientist: A Theoretical Treatise on Lindblad Operators, EIT in Multi-Level Atomic Ensembles, and High-Fidelity Data Encoding</p>
             <p class="pub-authors"><span class="me">R. S. Raigada García</span></p>
-            <p class="pub-venue">Master's thesis, Universitat Oberta de Catalunya</p>
+            <p class="pub-venue">Master's thesis, <span lang="ca">Universitat Oberta de Catalunya</span></p>
             <p class="pub-links">
-              <a href="https://doi.org/10.5281/zenodo.14810946" target="_blank" rel="noopener">DOI</a>
-              <a href="http://hdl.handle.net/10609/152040" target="_blank" rel="noopener">UOC repository</a>
-              <a href="https://github.com/ToroData/Quantum-Database-Architecture-for-the-Quantum-Data-Scientist-Thesis" target="_blank" rel="noopener">Code</a>
+              <a href="https://doi.org/10.5281/zenodo.14810946">DOI<span class="sr-only">: Quantum Database Architecture thesis</span></a>
+              <a href="http://hdl.handle.net/10609/152040">UOC repository<span class="sr-only">: Quantum Database Architecture thesis</span></a>
+              <a href="https://github.com/ToroData/Quantum-Database-Architecture-for-the-Quantum-Data-Scientist-Thesis">Code<span class="sr-only">: Quantum Database Architecture thesis</span></a>
             </p>
           </div>
         </li>
@@ -175,7 +330,7 @@
             <p class="pub-title">Symmetries in Quantum Mechanics: from Klein-Gordon Equation to Higgs Mechanism</p>
             <p class="pub-authors"><span class="me">R. S. Raigada García</span></p>
             <p class="pub-venue">Zenodo (MITx 8.06x)</p>
-            <p class="pub-links"><a href="https://doi.org/10.5281/zenodo.14774610" target="_blank" rel="noopener">DOI</a></p>
+            <p class="pub-links"><a href="https://doi.org/10.5281/zenodo.14774610">DOI<span class="sr-only">: Symmetries in Quantum Mechanics</span></a></p>
           </div>
         </li>
         <li class="pub">
@@ -183,10 +338,10 @@
           <div>
             <p class="pub-title">Optimizing Quantum Circuits for Efficient Execution on Superconducting Hardware: A Case Study of the Cuccaro Adder</p>
             <p class="pub-authors"><span class="me">R. S. Raigada García</span></p>
-            <p class="pub-venue">Technical report, Universitat Oberta de Catalunya</p>
+            <p class="pub-venue">Technical report, <span lang="ca">Universitat Oberta de Catalunya</span></p>
             <p class="pub-links">
-              <a href="https://doi.org/10.13140/RG.2.2.24291.77608" target="_blank" rel="noopener">DOI</a>
-              <a href="http://hdl.handle.net/10609/150164" target="_blank" rel="noopener">UOC repository</a>
+              <a href="https://doi.org/10.13140/RG.2.2.24291.77608">DOI<span class="sr-only">: Cuccaro Adder report</span></a>
+              <a href="http://hdl.handle.net/10609/150164">UOC repository<span class="sr-only">: Cuccaro Adder report</span></a>
             </p>
           </div>
         </li>
@@ -197,20 +352,40 @@
       <h2>Talks &amp; Posters</h2>
       <p class="note">Conferences, workshops and poster sessions.</p>
       <ol class="pubs">
-        Copy this block for each talk or poster and delete the empty-state line below.
+        <!-- Copy this <li> for each new talk or poster. -->
         <li class="pub">
           <span class="year">2026</span>
           <div>
-            <p class="pub-title">Wave-Based Dispatch for Circuit Cutting in Hybrid HPC--Quantum Systems</p>
-            <p class="pub-venue"><span class="badge">Poster</span> ACM ICS · Belfast, Ireland · July 2026</p>
+            <p class="pub-title">Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</p>
+            <p class="pub-venue"><span class="badge">Poster</span> ACM International Conference on Supercomputing (ICS) · Belfast, UK · July 2026</p>
+            <figure class="poster">
+              <a href="assets/posters/raigada-garcia-ics2026-poster.pdf">
+                <img src="assets/img/poster-ics2026-thumb.webp" width="663" height="937" loading="lazy" decoding="async"
+                     alt="Preview of the ICS 2026 poster. Opens the PDF.">
+              </a>
+              <figcaption>
+                <details>
+                  <summary>Poster summary in text</summary>
+                  <p>
+                    The poster presents DQR (Dynamic Queue Router), a runtime that treats circuit-cutting fragments as
+                    schedulable units. A large circuit is cut into fragments; DQR dispatches them in waves through the Slurm
+                    resource manager to a local QPU (Qmio, CESGA), a remote QPU (IBM Torino) or a classical simulator (Qulacs),
+                    and retries a failed fragment on the CPU without restarting the pipeline.
+                  </p>
+                  <p>
+                    Contributions: a backend-agnostic fragment descriptor; wave-based dispatch with pipeline concurrency,
+                    per-fragment retry and QPU-to-CPU failover; and a production implementation on CESGA Qmio, alone and
+                    combined with IBM Torino, with two and four cuts. Experiments on a 32-qubit hardware-efficient ansatz
+                    improve makespan over a monolithic CPU baseline.
+                  </p>
+                </details>
+              </figcaption>
+            </figure>
             <p class="pub-links">
-              <a href="assets/posters/póster.pdf" target="_blank">Poster PDF</a>
-              <a href="assets/posters/Raigada_García_poster_ICS.pptx" target="_blank">Slides PPTX</a>
+              <a href="assets/posters/raigada-garcia-ics2026-poster.pdf">Poster PDF<span class="sr-only">, ICS 2026, 1.4 MB</span></a>
             </p>
           </div>
         </li>
-       
-        <li class="empty">Upcoming presentations will be listed here.</li>
       </ol>
     </section>
 
@@ -220,9 +395,11 @@
         <li>
           <span class="when">2026 – present</span>
           <div>
-            <p class="what">PhD Candidate</p>
-            <p class="where">Barcelona Supercomputing Center · Universitat Politècnica de Catalunya</p>
-            <p class="detail">AccelCom group. Runtime systems and scheduling for hybrid HPC–quantum infrastructures.</p>
+            <p class="what">PhD Candidate, Computer Architecture doctoral programme</p>
+            <p class="where"><span lang="ca">Universitat Politècnica de Catalunya</span> · AccelCom group, Barcelona Supercomputing Center</p>
+            <p class="detail">Runtime systems and scheduling for hybrid HPC–quantum infrastructures.</p>
+            <!-- Verify titles and wording with your advisors before publishing. -->
+            <p class="detail">Advisors: Antonio J. Peña (thesis director) and Sergio Iserte.</p>
           </div>
         </li>
       </ol>
@@ -234,12 +411,12 @@
         <li>
           <span class="when">2026 – present</span>
           <div>
-            <p class="what">PhD</p>
-            <p class="where">Universitat Politècnica de Catalunya (UPC)</p>
+            <p class="what">PhD in Computer Architecture</p>
+            <p class="where"><span lang="ca">Universitat Politècnica de Catalunya</span> (UPC)</p>
           </div>
         </li>
         <li>
-          <span class="when">Attended 2025 – 2026</span>
+          <span class="when">2025 – 2026</span>
           <div>
             <p class="what">MSc in Advanced Physics</p>
             <p class="where">UNED, Madrid</p>
@@ -249,15 +426,15 @@
           <span class="when">2025</span>
           <div>
             <p class="what">Data Science</p>
-            <p class="where">Universitat Oberta de Catalunya (UOC)</p>
+            <p class="where"><span lang="ca">Universitat Oberta de Catalunya</span> (UOC)</p>
             <p class="detail">Thesis: <em>Quantum Database Architecture for the Quantum Data Scientist</em>.</p>
           </div>
         </li>
         <li>
-          <span class="when"></span>
+          <span class="when">2026</span>
           <div>
             <p class="what">MSc in Computer Engineering</p>
-            <p class="where">Universitat Oberta de Catalunya (UOC)</p>
+            <p class="where"><span lang="ca">Universitat Oberta de Catalunya</span> (UOC)</p>
             <p class="detail">Thesis: <em>Wave-Based Resource Management for Circuit Cutting in HPC–Quantum Convergence</em>.</p>
           </div>
         </li>
@@ -285,9 +462,9 @@
     <section id="skills">
       <h2>Skills</h2>
       <dl class="skills">
-        <dt>Quantum</dt><dd>Qiskit, circuit cutting, quantum algorithms, quantum information</dd>
-        <dt>HPC &amp; Systems</dt><dd>Scheduling, runtime systems, distributed computing, Linux</dd>
-        <dt>Programming</dt><dd>Python, scientific computing, machine learning, deep learning</dd>
+        <dt>Quantum</dt><dd>Qiskit, Qulacs, circuit cutting, quantum algorithms, quantum information</dd>
+        <dt>HPC &amp; Systems</dt><dd>Slurm, MPI, scheduling, runtime systems, distributed computing, Linux</dd>
+        <dt>Programming</dt><dd>C/C++, Python, scientific computing, machine learning</dd>
         <dt>Cloud</dt><dd>AWS (SageMaker, Lambda, Step Functions, Braket)</dd>
         <dt>Languages</dt><dd>Catalan &amp; Spanish (native), English (professional)</dd>
       </dl>
@@ -296,23 +473,22 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        I'm happy to talk about hybrid HPC–quantum systems, collaborations, or research stays.
+        I'm happy to talk about hybrid HPC–quantum systems, collaborations, internships or research stays.
         The easiest way to reach me is through
-        <a href="https://www.linkedin.com/in/ricard-santiago-raigada-garcia/" target="_blank" rel="noopener">LinkedIn</a>.
-        <!-- TODO: replace with your institutional email: or by email at <a href="mailto:YOUR_EMAIL@bsc.es">YOUR_EMAIL@bsc.es</a>. -->
+        <a href="https://www.linkedin.com/in/ricard-santiago-raigada-garcia/">LinkedIn</a>
+        or by email at <a href="mailto:ricard.santiago.raigada@upc.edu">ricard.santiago.raigada@upc.edu</a>.
       </p>
-      <p class="print-only">Web: <span id="site-url"></span> · ORCID: 0009-0009-9684-4745 · GitHub: github.com/ToroData</p>
+      <p class="print-only">Web: raigada-garcia.dev · ORCID: 0009-0009-9684-4745 · GitHub: github.com/ToroData</p>
     </section>
 
     <footer class="footer">
-      <p>© <span id="year">2026</span> Ricard Santiago Raigada García · Last updated October 2026</p>
+      <p>© <span id="year">2026</span> Ricard Santiago Raigada García · Last updated October 2026 · <a href="research-map.html">Research map</a></p>
     </footer>
   </main>
 </div>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('site-url').textContent = location.host + location.pathname;
 
   // Until cv.pdf exists, "Download CV" prints this page (choose "Save as PDF").
   (function () {
