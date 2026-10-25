@@ -1,0 +1,22 @@
+{
+  "_comment": "The build sorts by date. Items with an 'arxiv' field take their date from the arXiv record. Items with \"auto\": true are added by the arXiv sync.",
+  "items": [
+    {
+      "date": "2026-07-01",
+      "text": "Presented the DQR poster at ACM ICS 2026 in Belfast.",
+      "url": "assets/posters/raigada-garcia-ics2026-poster.pdf"
+    },
+    {
+      "text": "New preprint: Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems.",
+      "url": "papers/2604.15279.html",
+      "auto": true,
+      "arxiv": "2604.15279"
+    },
+    {
+      "text": "New preprint: Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation.",
+      "url": "papers/2610.09659.html",
+      "auto": true,
+      "arxiv": "2610.09659"
+    }
+  ]
+}

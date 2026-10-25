@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
   <style>
     :root {
       --c-person: var(--text);
@@ -129,6 +129,7 @@
     <a href="index.html#publications">Publications</a>
     <a href="index.html#contact">Contact</a>
     <a href="research-map.html" aria-current="page">Research map</a>
+    <a href="dqr-explainer.html">DQR explainer</a>
   </nav>
 </header>
 
@@ -206,9 +207,9 @@
     { id: 'torino', type: 'infra', label: 'IBM Torino', text: 'Remote IBM Quantum backend used together with Qmio.' },
     { id: 'mn5',    type: 'infra', label: 'MareNostrum 5', text: 'Pre-exascale supercomputer hosted at the Barcelona Supercomputing Center.' },
 
-    { id: 'dqr',     type: 'output', label: 'DQR preprint (2026)', text: 'Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems. R. S. Raigada-García, J. Jorba, S. Iserte. arXiv:2604.15279.', href: 'https://arxiv.org/abs/2604.15279' },
-    { id: 'qubit-placement', type: 'output', label: 'Qubit-placement preprint (2026)', text: 'Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation. Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, Ricard S. Raigada-García, Antonio J. Peña. arXiv:2610.09659.', href: 'https://arxiv.org/abs/2610.09659' },
+    { id: 'dqr',     type: 'output', label: 'DQR preprint (2026)', text: 'Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems. R. S. Raigada-García, J. Jorba, S. Iserte. arXiv:2604.15279.', href: 'papers/2604.15279.html' },
     { id: 'poster',  type: 'output', label: 'ACM ICS 2026 poster', text: 'Poster of the DQR runtime at the ACM International Conference on Supercomputing, Belfast, 2026.', href: 'assets/posters/raigada-garcia-ics2026-poster.pdf' },
+    { id: 'explain', type: 'output', label: 'DQR interactive explainer', text: 'A toy model of wave-based dispatch with failover, to try in the browser.', href: 'dqr-explainer.html' },
     { id: 'msc',     type: 'output', label: 'MSc thesis (Computer Engineering)', text: 'Wave-Based Resource Management for Circuit Cutting in HPC–Quantum Convergence. UOC.', href: 'index.html#education' },
     { id: 'qdb',     type: 'output', label: 'Quantum database thesis', text: 'Quantum Database Architecture for the Quantum Data Scientist. Master’s thesis, UOC, 2025.', href: 'https://doi.org/10.5281/zenodo.14810946' },
     { id: 'cuccaro', type: 'output', label: 'Cuccaro adder report', text: 'Optimizing Quantum Circuits for Efficient Execution on Superconducting Hardware: A Case Study of the Cuccaro Adder. UOC, 2024.', href: 'https://doi.org/10.13140/RG.2.2.24291.77608' },
@@ -223,11 +224,10 @@
   var EDGES = [
     ['me','L1'],['me','L2'],['me','L3'],['me','L4'],['me','upc'],['me','bsc'],['me','uoc'],
     ['L1','cut'],['L1','wave'],['L1','ft'],['L1','slurm'],['L1','dqr'],['L1','poster'],['L1','msc'],
-    ['dqr','poster'],['dqr','qmio'],['dqr','torino'],['dqr','qulacs'],['dqr','cpp'],['dqr','uoc'],['dqr','bsc'],
+    ['dqr','poster'],['dqr','explain'],['dqr','qmio'],['dqr','torino'],['dqr','qulacs'],['dqr','cpp'],['dqr','uoc'],['dqr','bsc'],
     ['wave','rm'],['ft','L2'],['qmio','cesga'],['torino','ibmq'],
     ['L2','rm'],['L2','mpi'],['L2','bsc'],
-    ['L3','dsim'],['L3','mpi'],['L3','bsc'],['L3','qubit-placement'],
-    ['qubit-placement','dsim'],['qubit-placement','bsc'],
+    ['L3','dsim'],['L3','mpi'],['L3','bsc'],
     ['L4','qcsc'],['L4','upc'],['L4','bsc'],['L4','L1'],['L4','L2'],['L4','L3'],
     ['bsc','mn5'],['cut','qiskit'],['cut','msc'],['msc','uoc'],
     ['cuccaro','qiskit'],['cuccaro','ibmq'],['cuccaro','uoc'],
@@ -597,5 +597,6 @@
   }
 })();
 </script>
+<script src="site.js" defer></script>
 </body>
 </html>

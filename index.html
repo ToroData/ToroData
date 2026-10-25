@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 
   <!-- Structured data: one entity for every spelling of the name -->
   <script type="application/ld+json">
@@ -88,35 +88,74 @@
           "https://github.com/ToroData",
           "https://www.linkedin.com/in/ricard-santiago-raigada-garcia/"
         ]
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "headline": "Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems",
-        "datePublished": "2026",
-        "url": "https://arxiv.org/abs/2604.15279",
-        "author": [
-          { "@id": "https://raigada-garcia.dev/#person" },
-          { "@type": "Person", "name": "Josep Jorba" },
-          { "@type": "Person", "name": "Sergio Iserte" }
-        ]
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "headline": "Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation",
-        "datePublished": "2026-10-07",
-        "isPartOf": { "@type": "PublicationVolume", "name": "arXiv preprint arXiv:2610.09659" },
-        "url": "https://arxiv.org/abs/2610.09659",
-        "author": [
-          { "@type": "Person", "name": "Íñigo Aréjula-Aísa" },
-          { "@type": "Person", "name": "Sergio Iserte" },
-          { "@type": "Person", "name": "Petter Sandås" },
-          { "@id": "https://raigada-garcia.dev/#person" },
-          { "@type": "Person", "name": "Antonio J Peña" }
-        ]
       }
     ]
   }
   </script>
+<!-- BUILD:LD-PUBLICATIONS -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://raigada-garcia.dev/papers/2610.09659.html#article",
+      "headline": "Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation",
+      "datePublished": "2026-10-07",
+      "url": "https://raigada-garcia.dev/papers/2610.09659.html",
+      "sameAs": [
+        "https://arxiv.org/abs/2610.09659"
+      ],
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Íñigo Aréjula-Aísa"
+        },
+        {
+          "@type": "Person",
+          "name": "Sergio Iserte"
+        },
+        {
+          "@type": "Person",
+          "name": "Petter Sandås"
+        },
+        {
+          "@id": "https://raigada-garcia.dev/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Antonio J. Peña"
+        }
+      ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://raigada-garcia.dev/papers/2604.15279.html#article",
+      "headline": "Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems",
+      "datePublished": "2026-04-16",
+      "url": "https://raigada-garcia.dev/papers/2604.15279.html",
+      "sameAs": [
+        "https://arxiv.org/abs/2604.15279"
+      ],
+      "author": [
+        {
+          "@id": "https://raigada-garcia.dev/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Josep Jorba"
+        },
+        {
+          "@type": "Person",
+          "name": "Sergio Iserte"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+<!-- /BUILD:LD-PUBLICATIONS -->
+  <link rel="alternate" type="application/atom+xml" title="Ricard S. Raigada-García · updates" href="feed.xml">
 </head>
 <body>
 
@@ -171,7 +210,6 @@
         LinkedIn</a></li>
       <li><a href="mailto:ricard.santiago.raigada@upc.edu">Email</a></li>
       <li><a href="https://scholar.google.com/citations?user=n6cqJmIAAAAJ&hl=en" rel="me">Google Scholar</a></li>
-     
     </ul>
 
     <a class="btn" id="cv-btn" href="cv.pdf" download>
@@ -210,6 +248,18 @@
       </ul>
     </section>
 
+    <section id="news" aria-labelledby="news-h">
+      <h2 id="news-h">News</h2>
+<!-- BUILD:NEWS -->
+      <ul class="news">
+        <li><time datetime="2026-10-07">Oct 2026</time><span>New preprint: Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation. <a href="papers/2610.09659.html">Read more<span class="sr-only">: New preprint: Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation.</span></a></span></li>
+        <li><time datetime="2026-07-01">Jul 2026</time><span>Presented the DQR poster at ACM ICS 2026 in Belfast. <a href="assets/posters/raigada-garcia-ics2026-poster.pdf">Read more<span class="sr-only">: Presented the DQR poster at ACM ICS 2026 in Belfast.</span></a></span></li>
+        <li><time datetime="2026-04-16">Apr 2026</time><span>New preprint: Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems. <a href="papers/2604.15279.html">Read more<span class="sr-only">: New preprint: Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems.</span></a></span></li>
+      </ul>
+      <p class="note"><a href="feed.xml">Follow updates by RSS/Atom</a></p>
+<!-- /BUILD:NEWS -->
+    </section>
+
     <section id="research" aria-labelledby="research-h">
       <h2 id="research-h">Research lines</h2>
       <p class="note">
@@ -225,7 +275,7 @@
           I build runtimes that turn quantum work into units the centre’s resource manager can queue, route and recover,
           across local QPUs, remote QPUs and classical simulators.
         </p>
-        <p class="rline-links"><a href="#pub-dqr">See the publication</a></p>
+        <p class="rline-links"><a href="#pub-2604-15279">See the publication</a> · <a href="dqr-explainer.html">Try the interactive explainer</a></p>
       </article>
 
       <article class="rline">
@@ -259,93 +309,165 @@
 
     <section id="publications">
       <h2>Publications</h2>
-      <p class="note">Full list on <a href="https://orcid.org/0009-0009-9684-4745">ORCID</a>.</p>
+<!-- BUILD:PUBLICATIONS -->
+      <p class="note">Updated automatically from arXiv. Full list on <a href="https://orcid.org/0009-0009-9684-4745">ORCID</a> · <a href="publications.bib">all as BibTeX</a>.</p>
 
       <h3>Preprints</h3>
       <ol class="pubs">
-        <li class="pub" id="pub-qubit-placement">
+        <li class="pub" id="pub-2610-09659">
           <span class="year">2026</span>
           <div>
-            <p class="pub-title">Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation</p>
+            <p class="pub-title"><a href="papers/2610.09659.html">Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation</a></p>
             <p class="pub-authors">Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, <span class="me">Ricard S. Raigada-García</span>, Antonio J. Peña</p>
-            <p class="pub-venue">arXiv preprint arXiv:2610.09659 · 7 October 2026</p>
-            <p class="pub-abstract">
-              A communication-aware qubit-layout framework that reduces inter-node data exchange while selecting the
-              number of computational nodes automatically. Integrated into QuCSLO, it supports dynamic node scaling,
-              OpenQASM parsing and QuEST; evaluations on synthetic and QASMBench circuits show fewer communication
-              cuts and runtime speedups above 2× over identity layouts, particularly for highly entangled circuits.
-            </p>
+            <p class="pub-venue">arXiv:2610.09659 [cs.DC]</p>
+            <p class="pub-abstract">A communication-aware qubit-layout framework that reduces inter-node data exchange while selecting the number of computational nodes automatically. Integrated into QuCSLO, it supports dynamic node scaling, OpenQASM parsing and QuEST; evaluations on synthetic and QASMBench circuits show fewer communication cuts and runtime speedups above 2× over identity layouts, particularly for highly entangled circuits.</p>
             <p class="pub-links">
-              <a href="https://arxiv.org/abs/2610.09659">arXiv<span class="sr-only">: Communication-Aware Qubit Placement</span></a>
-              <a href="https://arxiv.org/pdf/2610.09659">PDF<span class="sr-only">: Communication-Aware Qubit Placement</span></a>
+              <a href="https://arxiv.org/abs/2610.09659">arXiv<span class="sr-only">: Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation</span></a>
+              <a href="https://arxiv.org/pdf/2610.09659">PDF<span class="sr-only">: Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation</span></a>
             </p>
+            <details class="cite">
+              <summary>Cite</summary>
+              <pre id="bib-pub-2610-09659">@misc{arejulaaisa2026communication,
+  title = {{Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation}},
+  author = {Aréjula-Aísa, Íñigo and Iserte, Sergio and Sandås, Petter and Raigada-García, Ricard S. and Peña, Antonio J.},
+  year = {2026},
+  eprint = {2610.09659},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.DC},
+  url = {https://arxiv.org/abs/2610.09659}
+}</pre>
+              <button type="button" class="copy" data-copy="bib-pub-2610-09659">Copy BibTeX</button>
+            </details>
           </div>
         </li>
-        <li class="pub" id="pub-dqr">
+        <li class="pub" id="pub-2604-15279">
           <span class="year">2026</span>
           <div>
-            <p class="pub-title">Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</p>
-            <p class="pub-authors"><span class="me">R. S. Raigada-García</span>, J. Jorba, S. Iserte</p>
+            <p class="pub-title"><a href="papers/2604.15279.html">Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</a></p>
+            <p class="pub-authors"><span class="me">Ricard S. García-Raigada</span>, Josep Jorba, Sergio Iserte</p>
             <p class="pub-venue">arXiv:2604.15279 [cs.DC]</p>
-            <p class="pub-abstract">
-              DQR (Dynamic Queue Router), a runtime that treats circuit-cutting fragments as schedulable units, so HPC centres
-              can apply standard resource management to NISQ workloads. Evaluated on the CESGA Qmio supercomputer with its
-              local QPU and the remote IBM Torino backend, with per-fragment failover to classical simulators.
-            </p>
+            <p class="pub-abstract">DQR (Dynamic Queue Router), a runtime that treats circuit-cutting fragments as schedulable units, so HPC centres can apply standard resource management to NISQ workloads. Evaluated on the CESGA Qmio supercomputer with its local QPU and the remote IBM Torino backend, with per-fragment failover to classical simulators.</p>
             <p class="pub-links">
-              <a href="https://arxiv.org/abs/2604.15279">arXiv<span class="sr-only">: Wave-Based Dispatch for Circuit Cutting</span></a>
-              <a href="https://arxiv.org/pdf/2604.15279">PDF<span class="sr-only">: Wave-Based Dispatch for Circuit Cutting</span></a>
+              <a href="https://arxiv.org/abs/2604.15279">arXiv<span class="sr-only">: Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</span></a>
+              <a href="https://arxiv.org/pdf/2604.15279">PDF<span class="sr-only">: Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</span></a>
+              <a href="dqr-explainer.html">Interactive explainer<span class="sr-only">: Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</span></a>
             </p>
+            <details class="cite">
+              <summary>Cite</summary>
+              <pre id="bib-pub-2604-15279">@misc{raigadagarcia2026wave,
+  title = {{Wave-Based Dispatch for Circuit Cutting in Hybrid HPC--Quantum Systems}},
+  author = {Raigada-García, Ricard S. and Jorba, Josep and Iserte, Sergio},
+  year = {2026},
+  eprint = {2604.15279},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.DC},
+  url = {https://arxiv.org/abs/2604.15279}
+}</pre>
+              <button type="button" class="copy" data-copy="bib-pub-2604-15279">Copy BibTeX</button>
+            </details>
           </div>
         </li>
       </ol>
 
       <h3>Theses, reports &amp; other works</h3>
       <ol class="pubs">
-        <li class="pub">
+        <li class="pub" id="pub-zenodo-15772617">
           <span class="year">2025</span>
           <div>
             <p class="pub-title">Emergent Geometrodynamic Intelligence in Transformers: Lagrangian Dynamics, Gauge Symmetries, and Holographic Emergence</p>
             <p class="pub-authors"><span class="me">R. S. Raigada García</span></p>
             <p class="pub-venue">Universitat Oberta de Catalunya · Zenodo</p>
-            <p class="pub-links"><a href="https://doi.org/10.5281/zenodo.15772617">DOI<span class="sr-only">: Emergent Geometrodynamic Intelligence in Transformers</span></a></p>
+            <p class="pub-links">
+              <a href="https://doi.org/10.5281/zenodo.15772617">DOI<span class="sr-only">: Emergent Geometrodynamic Intelligence in Transformers: Lagrangian Dynamics, Gauge Symmetries, and Holographic Emergence</span></a>
+            </p>
+            <details class="cite">
+              <summary>Cite</summary>
+              <pre id="bib-pub-zenodo-15772617">@misc{raigadagarcia2025emergent,
+  title = {{Emergent Geometrodynamic Intelligence in Transformers: Lagrangian Dynamics, Gauge Symmetries, and Holographic Emergence}},
+  author = {Raigada-García, Ricard S.},
+  year = {2025},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.15772617},
+  url = {https://doi.org/10.5281/zenodo.15772617}
+}</pre>
+              <button type="button" class="copy" data-copy="bib-pub-zenodo-15772617">Copy BibTeX</button>
+            </details>
           </div>
         </li>
-        <li class="pub">
+        <li class="pub" id="pub-zenodo-14810946">
           <span class="year">2025</span>
           <div>
             <p class="pub-title">Quantum Database Architecture for the Quantum Data Scientist: A Theoretical Treatise on Lindblad Operators, EIT in Multi-Level Atomic Ensembles, and High-Fidelity Data Encoding</p>
             <p class="pub-authors"><span class="me">R. S. Raigada García</span></p>
-            <p class="pub-venue">Master's thesis, <span lang="ca">Universitat Oberta de Catalunya</span></p>
+            <p class="pub-venue">Master&#x27;s thesis, Universitat Oberta de Catalunya</p>
             <p class="pub-links">
-              <a href="https://doi.org/10.5281/zenodo.14810946">DOI<span class="sr-only">: Quantum Database Architecture thesis</span></a>
-              <a href="http://hdl.handle.net/10609/152040">UOC repository<span class="sr-only">: Quantum Database Architecture thesis</span></a>
-              <a href="https://github.com/ToroData/Quantum-Database-Architecture-for-the-Quantum-Data-Scientist-Thesis">Code<span class="sr-only">: Quantum Database Architecture thesis</span></a>
+              <a href="https://doi.org/10.5281/zenodo.14810946">DOI<span class="sr-only">: Quantum Database Architecture for the Quantum Data Scientist: A Theoretical Treatise on Lindblad Operators, EIT in Multi-Level Atomic Ensembles, and High-Fidelity Data Encoding</span></a>
+              <a href="http://hdl.handle.net/10609/152040">UOC repository<span class="sr-only">: Quantum Database Architecture for the Quantum Data Scientist: A Theoretical Treatise on Lindblad Operators, EIT in Multi-Level Atomic Ensembles, and High-Fidelity Data Encoding</span></a>
+              <a href="https://github.com/ToroData/Quantum-Database-Architecture-for-the-Quantum-Data-Scientist-Thesis">Code<span class="sr-only">: Quantum Database Architecture for the Quantum Data Scientist: A Theoretical Treatise on Lindblad Operators, EIT in Multi-Level Atomic Ensembles, and High-Fidelity Data Encoding</span></a>
             </p>
+            <details class="cite">
+              <summary>Cite</summary>
+              <pre id="bib-pub-zenodo-14810946">@mastersthesis{raigadagarcia2025quantum,
+  title = {{Quantum Database Architecture for the Quantum Data Scientist: A Theoretical Treatise on Lindblad Operators, EIT in Multi-Level Atomic Ensembles, and High-Fidelity Data Encoding}},
+  author = {Raigada-García, Ricard S.},
+  year = {2025},
+  school = {Universitat Oberta de Catalunya},
+  doi = {10.5281/zenodo.14810946},
+  url = {https://doi.org/10.5281/zenodo.14810946}
+}</pre>
+              <button type="button" class="copy" data-copy="bib-pub-zenodo-14810946">Copy BibTeX</button>
+            </details>
           </div>
         </li>
-        <li class="pub">
+        <li class="pub" id="pub-zenodo-14774610">
           <span class="year">2025</span>
           <div>
             <p class="pub-title">Symmetries in Quantum Mechanics: from Klein-Gordon Equation to Higgs Mechanism</p>
             <p class="pub-authors"><span class="me">R. S. Raigada García</span></p>
             <p class="pub-venue">Zenodo (MITx 8.06x)</p>
-            <p class="pub-links"><a href="https://doi.org/10.5281/zenodo.14774610">DOI<span class="sr-only">: Symmetries in Quantum Mechanics</span></a></p>
+            <p class="pub-links">
+              <a href="https://doi.org/10.5281/zenodo.14774610">DOI<span class="sr-only">: Symmetries in Quantum Mechanics: from Klein-Gordon Equation to Higgs Mechanism</span></a>
+            </p>
+            <details class="cite">
+              <summary>Cite</summary>
+              <pre id="bib-pub-zenodo-14774610">@misc{raigadagarcia2025symmetries,
+  title = {{Symmetries in Quantum Mechanics: from Klein-Gordon Equation to Higgs Mechanism}},
+  author = {Raigada-García, Ricard S.},
+  year = {2025},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.14774610},
+  url = {https://doi.org/10.5281/zenodo.14774610}
+}</pre>
+              <button type="button" class="copy" data-copy="bib-pub-zenodo-14774610">Copy BibTeX</button>
+            </details>
           </div>
         </li>
-        <li class="pub">
+        <li class="pub" id="pub-uoc-150164">
           <span class="year">2024</span>
           <div>
             <p class="pub-title">Optimizing Quantum Circuits for Efficient Execution on Superconducting Hardware: A Case Study of the Cuccaro Adder</p>
             <p class="pub-authors"><span class="me">R. S. Raigada García</span></p>
-            <p class="pub-venue">Technical report, <span lang="ca">Universitat Oberta de Catalunya</span></p>
+            <p class="pub-venue">Technical report, Universitat Oberta de Catalunya</p>
             <p class="pub-links">
-              <a href="https://doi.org/10.13140/RG.2.2.24291.77608">DOI<span class="sr-only">: Cuccaro Adder report</span></a>
-              <a href="http://hdl.handle.net/10609/150164">UOC repository<span class="sr-only">: Cuccaro Adder report</span></a>
+              <a href="https://doi.org/10.13140/RG.2.2.24291.77608">DOI<span class="sr-only">: Optimizing Quantum Circuits for Efficient Execution on Superconducting Hardware: A Case Study of the Cuccaro Adder</span></a>
+              <a href="http://hdl.handle.net/10609/150164">UOC repository<span class="sr-only">: Optimizing Quantum Circuits for Efficient Execution on Superconducting Hardware: A Case Study of the Cuccaro Adder</span></a>
             </p>
+            <details class="cite">
+              <summary>Cite</summary>
+              <pre id="bib-pub-uoc-150164">@techreport{raigadagarcia2024optimizing,
+  title = {{Optimizing Quantum Circuits for Efficient Execution on Superconducting Hardware: A Case Study of the Cuccaro Adder}},
+  author = {Raigada-García, Ricard S.},
+  year = {2024},
+  institution = {Universitat Oberta de Catalunya},
+  doi = {10.13140/RG.2.2.24291.77608},
+  url = {https://doi.org/10.13140/RG.2.2.24291.77608}
+}</pre>
+              <button type="button" class="copy" data-copy="bib-pub-uoc-150164">Copy BibTeX</button>
+            </details>
           </div>
         </li>
       </ol>
+<!-- /BUILD:PUBLICATIONS -->
     </section>
 
     <section id="talks">
@@ -475,31 +597,20 @@
       <p>
         I'm happy to talk about hybrid HPC–quantum systems, collaborations, internships or research stays.
         The easiest way to reach me is through
-        <a href="https://www.linkedin.com/in/ricard-santiago-raigada-garcia/">LinkedIn</a>
-        or by email at <a href="mailto:ricard.santiago.raigada@upc.edu">ricard.santiago.raigada@upc.edu</a>.
+        <a href="https://www.linkedin.com/in/ricard-santiago-raigada-garcia/">LinkedIn</a>.
+        <!-- TODO: or by email at <a href="mailto:YOUR_EMAIL@bsc.es">YOUR_EMAIL@bsc.es</a>. -->
       </p>
       <p class="print-only">Web: raigada-garcia.dev · ORCID: 0009-0009-9684-4745 · GitHub: github.com/ToroData</p>
     </section>
 
     <footer class="footer">
-      <p>© <span id="year">2026</span> Ricard Santiago Raigada García · Last updated October 2026 · <a href="research-map.html">Research map</a></p>
+      <p>© <span id="year">2026</span> Ricard Santiago Raigada García · Last updated <!-- BUILD:UPDATED -->
+October 2026
+<!-- /BUILD:UPDATED --> · <a href="research-map.html">Research map</a> · <a href="dqr-explainer.html">DQR explainer</a> · <a href="feed.xml">Feed</a></p>
     </footer>
   </main>
 </div>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Until cv.pdf exists, "Download CV" prints this page (choose "Save as PDF").
-  (function () {
-    var btn = document.getElementById('cv-btn');
-    fetch('cv.pdf', { method: 'HEAD' }).then(function (r) {
-      if (!r.ok) throw 0;
-    }).catch(function () {
-      btn.removeAttribute('download');
-      btn.addEventListener('click', function (e) { e.preventDefault(); window.print(); });
-    });
-  })();
-</script>
+<script src="site.js" defer></script>
 </body>
 </html>

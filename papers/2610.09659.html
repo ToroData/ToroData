@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation · Ricard S. Raigada-García</title>
+  <meta name="description" content="A communication-aware qubit-layout framework that reduces inter-node data exchange while selecting the number of computational nodes automatically. Integrate…">
+  <link rel="canonical" href="https://raigada-garcia.dev/papers/2610.09659.html">
+  <!-- Highwire Press tags, read by Google Scholar and reference managers -->
+  <meta name="citation_title" content="Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation">
+  <meta name="citation_author" content="Íñigo Aréjula-Aísa">
+  <meta name="citation_author" content="Sergio Iserte">
+  <meta name="citation_author" content="Petter Sandås">
+  <meta name="citation_author" content="Ricard S. Raigada-García">
+  <meta name="citation_author" content="Antonio J. Peña">
+  <meta name="citation_publication_date" content="2026/10/07">
+  <meta name="citation_online_date" content="2026/10/07">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2610.09659">
+  <meta name="citation_abstract_html_url" content="https://raigada-garcia.dev/papers/2610.09659.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://raigada-garcia.dev/papers/2610.09659.html">
+  <meta property="og:title" content="Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation">
+  <meta property="og:description" content="A communication-aware qubit-layout framework that reduces inter-node data exchange while selecting the number of computational nodes automatically. Integrate…">
+  <meta property="og:image" content="https://raigada-garcia.dev/assets/img/og-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png">
+  <link rel="alternate" type="application/atom+xml" title="Updates" href="../feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=3">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation",
+  "abstract": "Distributed quantum circuit simulation enables the execution of large-scale quantum algorithms by partitioning qubits across multiple computational nodes. However, inefficient qubit placement frequently leads to excessive inter-node communication, severely limiting performance and scalability. This work introduces a communication-aware qubit layout optimization framework that systematically minimizes data exchange among nodes while dynamically selecting the optimal number of computational resources. Integrated into the QuCSLO library, our approach supports dynamic node scaling, OpenQASM parsing, and seamless integration with the QuEST simulator. Extensive evaluations on both synthetic benchmarks and real-world QASMBench circuits demonstrate that optimized layouts significantly reduce communication cuts and yield runtime speedups of over 2x compared to identity layouts, particularly in highly entangled circuits. Our results underscore the critical impact of strategic qubit placement on distributed simulation efficiency and provide a practical, resource-scalable solution for quantum workloads.",
+  "datePublished": "2026-10-07",
+  "url": "https://raigada-garcia.dev/papers/2610.09659.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.09659"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Íñigo Aréjula-Aísa"
+    },
+    {
+      "@type": "Person",
+      "name": "Sergio Iserte"
+    },
+    {
+      "@type": "Person",
+      "name": "Petter Sandås"
+    },
+    {
+      "@type": "Person",
+      "name": "Ricard S. Raigada-García",
+      "url": "https://raigada-garcia.dev/"
+    },
+    {
+      "@type": "Person",
+      "name": "Antonio J. Peña"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../index.html">R. S. Raigada-García</a>
+  <nav class="nav" aria-label="Site">
+    <a href="../index.html#research">Research</a>
+    <a href="../index.html#publications">Publications</a>
+    <a href="../research-map.html">Research map</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+<main class="paper" id="main">
+  <p class="paper-kind">Preprint · arXiv:2610.09659 [cs.DC] · Oct 2026</p>
+  <h1>Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation</h1>
+  <p class="pub-authors">Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, <span class="me">Ricard S. Raigada-García</span>, Antonio J. Peña</p>
+  <p class="pub-links"><a href="https://arxiv.org/abs/2610.09659">arXiv</a> <a href="https://arxiv.org/pdf/2610.09659">PDF</a></p>
+  <h2>Abstract</h2>
+  <p class="paper-abstract">Distributed quantum circuit simulation enables the execution of large-scale quantum algorithms by partitioning qubits across multiple computational nodes. However, inefficient qubit placement frequently leads to excessive inter-node communication, severely limiting performance and scalability. This work introduces a communication-aware qubit layout optimization framework that systematically minimizes data exchange among nodes while dynamically selecting the optimal number of computational resources. Integrated into the QuCSLO library, our approach supports dynamic node scaling, OpenQASM parsing, and seamless integration with the QuEST simulator. Extensive evaluations on both synthetic benchmarks and real-world QASMBench circuits demonstrate that optimized layouts significantly reduce communication cuts and yield runtime speedups of over 2x compared to identity layouts, particularly in highly entangled circuits. Our results underscore the critical impact of strategic qubit placement on distributed simulation efficiency and provide a practical, resource-scalable solution for quantum workloads.</p>
+  <h2>Cite</h2>
+  <pre id="bib">@misc{arejulaaisa2026communication,
+  title = {{Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation}},
+  author = {Aréjula-Aísa, Íñigo and Iserte, Sergio and Sandås, Petter and Raigada-García, Ricard S. and Peña, Antonio J.},
+  year = {2026},
+  eprint = {2610.09659},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.DC},
+  url = {https://arxiv.org/abs/2610.09659}
+}</pre>
+  <button type="button" class="copy" data-copy="bib">Copy BibTeX</button>
+  <p class="paper-back"><a href="../index.html#publications">All publications</a></p>
+</main>
+<script src="../site.js" defer></script>
+</body>
+</html>

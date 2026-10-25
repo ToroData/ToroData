@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <title>arXiv Query fixture</title>
+  <entry>
+    <id>http://arxiv.org/abs/2604.15279v1</id>
+    <updated>2026-04-16T17:59:59Z</updated>
+    <published>2026-04-16T17:59:59Z</published>
+    <title>Wave-Based Dispatch for Circuit Cutting in Hybrid HPC--Quantum
+  Systems</title>
+    <summary>  Hybrid HPC-quantum workloads based on circuit cutting decompose large quantum circuits into independent fragments, but existing frameworks tightly couple cutting logic to execution orchestration, preventing HPC centers from applying mature resource management policies to NISQ workloads. We present DQR (Dynamic Queue Router), a runtime framework that treats circuit fragments as first-class schedulable units. DQR introduces a backend-agnostic fragment descriptor, a wave-based coordinator enabling pipeline concurrency through non-blocking polling, and a production-ready implementation on the CESGA Qmio supercomputer integrating local and cloud quantum backends. Experiments on a 32-qubit Hardware-Efficient Ansatz demonstrate makespan improvements over a monolithic CPU baseline together with transparent per-fragment failover recovery without pipeline restart.
+</summary>
+    <author><name>Ricard S. Raigada-García</name></author>
+    <author><name>Josep Jorba</name></author>
+    <author><name>Sergio Iserte</name></author>
+    <link href="http://arxiv.org/abs/2604.15279v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2604.15279v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.00001v2</id>
+    <updated>2026-10-02T10:00:00Z</updated>
+    <published>2026-10-01T10:00:00Z</published>
+    <title>An unrelated paper by a homonym</title>
+    <summary>Should be filtered out because the given name does not match.</summary>
+    <author><name>Marta Raigada</name></author>
+    <link href="http://arxiv.org/abs/2610.00001v2" rel="alternate" type="text/html"/>
+    <arxiv:primary_category term="math.AP" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

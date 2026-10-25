@@ -1,0 +1,82 @@
+{
+  "_comment": "Manual entries and overrides. Entries with an 'arxiv' field override fields of the arXiv record with the same id; the rest are rendered as they are.",
+  "overrides": {
+    "2604.15279": {
+      "summary": "DQR (Dynamic Queue Router), a runtime that treats circuit-cutting fragments as schedulable units, so HPC centres can apply standard resource management to NISQ workloads. Evaluated on the CESGA Qmio supercomputer with its local QPU and the remote IBM Torino backend, with per-fragment failover to classical simulators.",
+      "explainer": "dqr-explainer.html"
+    },
+    "2610.09659": {
+      "summary": "A communication-aware qubit-layout framework that reduces inter-node data exchange while selecting the number of computational nodes automatically. Integrated into QuCSLO, it supports dynamic node scaling, OpenQASM parsing and QuEST; evaluations on synthetic and QASMBench circuits show fewer communication cuts and runtime speedups above 2× over identity layouts, particularly for highly entangled circuits."
+    }
+  },
+  "manual": [
+    {
+      "id": "zenodo-15772617",
+      "group": "other",
+      "type": "misc",
+      "year": 2025,
+      "title": "Emergent Geometrodynamic Intelligence in Transformers: Lagrangian Dynamics, Gauge Symmetries, and Holographic Emergence",
+      "authors": [
+        "R. S. Raigada García"
+      ],
+      "venue": "Universitat Oberta de Catalunya · Zenodo",
+      "publisher": "Zenodo",
+      "doi": "10.5281/zenodo.15772617"
+    },
+    {
+      "id": "zenodo-14810946",
+      "group": "other",
+      "type": "mastersthesis",
+      "year": 2025,
+      "title": "Quantum Database Architecture for the Quantum Data Scientist: A Theoretical Treatise on Lindblad Operators, EIT in Multi-Level Atomic Ensembles, and High-Fidelity Data Encoding",
+      "authors": [
+        "R. S. Raigada García"
+      ],
+      "venue": "Master's thesis, Universitat Oberta de Catalunya",
+      "school": "Universitat Oberta de Catalunya",
+      "doi": "10.5281/zenodo.14810946",
+      "links": [
+        {
+          "label": "UOC repository",
+          "url": "http://hdl.handle.net/10609/152040"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/ToroData/Quantum-Database-Architecture-for-the-Quantum-Data-Scientist-Thesis"
+        }
+      ]
+    },
+    {
+      "id": "zenodo-14774610",
+      "group": "other",
+      "type": "misc",
+      "year": 2025,
+      "title": "Symmetries in Quantum Mechanics: from Klein-Gordon Equation to Higgs Mechanism",
+      "authors": [
+        "R. S. Raigada García"
+      ],
+      "venue": "Zenodo (MITx 8.06x)",
+      "publisher": "Zenodo",
+      "doi": "10.5281/zenodo.14774610"
+    },
+    {
+      "id": "uoc-150164",
+      "group": "other",
+      "type": "techreport",
+      "year": 2024,
+      "title": "Optimizing Quantum Circuits for Efficient Execution on Superconducting Hardware: A Case Study of the Cuccaro Adder",
+      "authors": [
+        "R. S. Raigada García"
+      ],
+      "venue": "Technical report, Universitat Oberta de Catalunya",
+      "institution": "Universitat Oberta de Catalunya",
+      "doi": "10.13140/RG.2.2.24291.77608",
+      "links": [
+        {
+          "label": "UOC repository",
+          "url": "http://hdl.handle.net/10609/150164"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dispatching circuit fragments in waves · interactive explainer · Ricard S. Raigada-García</title>
+  <meta name="description" content="Interactive explainer of wave-based dispatch for circuit cutting in hybrid HPC–quantum systems: how fragments are spread over local QPUs, remote QPUs and simulators, with per-fragment failover.">
+  <link rel="canonical" href="https://raigada-garcia.dev/dqr-explainer.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://raigada-garcia.dev/dqr-explainer.html">
+  <meta property="og:title" content="Dispatching circuit fragments in waves · interactive explainer">
+  <meta property="og:description" content="Change the number of fragments, the wave size and the failure rate, and watch the schedule change.">
+  <meta property="og:image" content="https://raigada-garcia.dev/assets/img/og-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="alternate" type="application/atom+xml" title="Updates" href="feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+  <style>
+    :root { --c-local: #1f4e79; --c-remote: #74469a; --c-cpu: #2f6f57; --c-fail: #b3261e; }
+    @media (prefers-color-scheme: dark) {
+      :root { --c-local: #8cb8e6; --c-remote: #c3a3e0; --c-cpu: #7cc4a4; --c-fail: #f2908a; }
+    }
+    .explainer { max-width: 1040px; margin: 0 auto; padding: clamp(24px, 4vw, 48px) clamp(16px, 4vw, 40px); }
+    .explainer h1 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); margin: 0 0 .8rem; max-width: 22ch; }
+    .lede { max-width: 68ch; font-size: 1.05rem; }
+    .caveat { max-width: 68ch; color: var(--muted); font-size: .92rem; border-left: 3px solid var(--line); padding-left: .8rem; }
+
+    .controls {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .9rem 1.6rem;
+      margin: 1.8rem 0 1.2rem; padding: 1rem 1.2rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface);
+    }
+    .control label { display: flex; justify-content: space-between; font-size: .9rem; font-weight: 500; }
+    .control output { font-variant-numeric: tabular-nums; color: var(--accent); font-weight: 600; }
+    .control input { width: 100%; accent-color: var(--accent); margin: .35rem 0 0; }
+    .control small { display: block; color: var(--muted); font-size: .8rem; }
+
+    .result { font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.4; max-width: 60ch; margin: 0 0 1.4rem; }
+    .result strong { color: var(--accent); }
+
+    .chart { margin: 0 0 1.6rem; }
+    .chart h2 { font-size: 1.15rem; border: 0; padding: 0; margin: 0 0 .2rem; }
+    .chart p { color: var(--muted); font-size: .9rem; margin: 0 0 .5rem; max-width: 68ch; }
+    .gantt { width: 100%; display: block; overflow: visible; }
+    .gantt text { font: 500 11px var(--sans); fill: var(--muted); }
+    .gantt .lane-label { font-size: 12px; fill: var(--text); }
+    .gantt .bar-label { fill: var(--surface); font-weight: 600; font-size: 10px; pointer-events: none; }
+    .gantt .grid { stroke: var(--line); }
+    .gantt .wave { stroke: var(--muted); stroke-dasharray: 3 4; }
+
+    .legend { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; list-style: none; padding: 0; margin: 0 0 2rem; font-size: .88rem; }
+    .legend li { display: inline-flex; align-items: center; gap: .45rem; }
+    .legend svg { width: 22px; height: 12px; }
+
+    .more { max-width: 68ch; }
+    .more h2 { font-size: 1.25rem; }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="index.html">R. S. Raigada-García</a>
+  <nav class="nav" aria-label="Site">
+    <a href="index.html#research">Research</a>
+    <a href="index.html#publications">Publications</a>
+    <a href="research-map.html">Research map</a>
+    <a href="dqr-explainer.html" aria-current="page">DQR explainer</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="explainer" id="main">
+  <h1>Dispatching circuit fragments in waves</h1>
+  <p class="lede">
+    Circuit cutting splits a quantum circuit that is too large for one device into many small fragments.
+    Each fragment can run anywhere: on the centre’s own QPU, on a remote QPU behind a cloud queue, or on a classical simulator.
+    DQR treats fragments as ordinary schedulable jobs, sends them out in waves without waiting on each one,
+    and moves a fragment to a simulator when its QPU run fails, without restarting the rest.
+  </p>
+  <p class="caveat">
+    This page runs a toy model with invented timings, to show the shape of the idea.
+    Measured results on CESGA Qmio and IBM Torino are in the <a href="papers/2604.15279.html">paper</a>.
+  </p>
+
+  <form class="controls" id="controls" aria-label="Model parameters" onsubmit="return false">
+    <div class="control">
+      <label for="n">Fragments <output for="n" id="n-out"></output></label>
+      <input type="range" id="n" min="4" max="32" step="1" value="16">
+      <small>More cuts produce more fragments.</small>
+    </div>
+    <div class="control">
+      <label for="b">Wave size <output for="b" id="b-out"></output></label>
+      <input type="range" id="b" min="1" max="8" step="1" value="4">
+      <small>Fragments in flight at the same time.</small>
+    </div>
+    <div class="control">
+      <label for="f">QPU failure rate <output for="f" id="f-out"></output></label>
+      <input type="range" id="f" min="0" max="40" step="5" value="10">
+      <small>Chance that a QPU run fails.</small>
+    </div>
+    <div class="control">
+      <label for="w">Remote queue wait <output for="w" id="w-out"></output></label>
+      <input type="range" id="w" min="0" max="30" step="2" value="4">
+      <small>Time a remote job waits before it starts.</small>
+    </div>
+  </form>
+
+  <p class="result" id="result" aria-live="polite"></p>
+
+  <section class="chart" aria-labelledby="c1-h">
+    <h2 id="c1-h">One fragment at a time</h2>
+    <p>Submit to the local QPU, wait for the result, then submit the next. A failed run is retried on the same QPU.</p>
+    <div id="chart-seq"></div>
+  </section>
+
+  <section class="chart" aria-labelledby="c2-h">
+    <h2 id="c2-h">Waves across every backend, with failover</h2>
+    <p>Each wave goes out at once to whichever backend would finish it first. A failed QPU run moves to a simulator straight away.</p>
+    <div id="chart-wave"></div>
+  </section>
+
+  <ul class="legend" aria-label="Legend">
+    <li><svg aria-hidden="true"><rect width="22" height="12" rx="2" fill="var(--c-local)"/></svg>Local QPU run</li>
+    <li><svg aria-hidden="true"><rect width="22" height="12" rx="2" fill="var(--c-remote)"/></svg>Remote QPU run</li>
+    <li><svg aria-hidden="true"><rect width="22" height="12" rx="2" fill="var(--c-cpu)"/></svg>Simulator run</li>
+    <li><svg aria-hidden="true"><rect width="22" height="12" rx="2" fill="url(#lg-wait)"/><defs><pattern id="lg-wait" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="var(--surface)"/><line x1="0" y1="0" x2="0" y2="5" stroke="var(--c-remote)" stroke-width="2"/></pattern></defs></svg>Waiting in the remote queue</li>
+    <li><svg aria-hidden="true"><rect x="1" y="1" width="20" height="10" rx="2" fill="var(--surface)" stroke="var(--c-fail)" stroke-width="2"/></svg>Failed run</li>
+    <li><svg aria-hidden="true"><line x1="11" y1="0" x2="11" y2="12" stroke="var(--muted)" stroke-dasharray="3 3"/></svg>Wave boundary</li>
+  </ul>
+
+  <section class="more" aria-labelledby="more-h">
+    <h2 id="more-h">What the model leaves out</h2>
+    <p>
+      Real fragments differ in width and depth, QPU calibration windows come and go, and reconstructing the
+      original result from fragments has its own classical cost. The runtime in the paper also goes through
+      the centre’s resource manager (Slurm) and keeps a backend-agnostic description of every fragment,
+      which is what lets it choose and change backends per fragment.
+    </p>
+    <p><a href="papers/2604.15279.html">Read the paper</a> · <a href="assets/posters/raigada-garcia-ics2026-poster.pdf">See the ICS 2026 poster</a> · <a href="index.html#research">Research lines</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Ricard Santiago Raigada García · <a href="index.html">Main page</a></p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Model constants (invented, illustrative) ---------- */
+  var T_LOCAL = 3, T_REMOTE = 2, T_CPU = 7, POLL = 1, MAX_RETRY = 3, CPU_LANES = 2;
+  var LANES = [
+    { id: 'local', label: 'Local QPU', color: '--c-local' },
+    { id: 'remote', label: 'Remote QPU', color: '--c-remote' },
+    { id: 'cpu0', label: 'Simulator 1', color: '--c-cpu' },
+    { id: 'cpu1', label: 'Simulator 2', color: '--c-cpu' }
+  ];
+
+  // The same random draws feed both strategies, so the comparison is fair.
+  function rng(seed) {
+    return function () {
+      seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+      var t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  var rand = rng(2604), DRAWS = [];
+  for (var i = 0; i < 32; i++) DRAWS.push({ jitter: rand(), fail: [rand(), rand(), rand(), rand()] });
+
+  function sequential(p) {
+    var t = 0, bars = [], fails = 0;
+    for (var i = 0; i < p.n; i++) {
+      var d = DRAWS[i], dur = T_LOCAL + d.jitter, done = false;
+      for (var a = 0; a < MAX_RETRY && !done; a++) {
+        var failed = d.fail[a] < p.f;
+        bars.push({ lane: 'local', start: t, end: t + dur, frag: i + 1, failed: failed });
+        t += dur + POLL;
+        if (failed) fails++; else done = true;
+      }
+      if (!done) { bars.push({ lane: 'cpu0', start: t, end: t + T_CPU, frag: i + 1 }); t += T_CPU + POLL; }
+    }
+    return { bars: bars, makespan: t - POLL, fails: fails, failovers: 0, waves: [] };
+  }
+
+  function waves(p) {
+    var free = { local: 0, remote: 0, cpu0: 0, cpu1: 0 };
+    var bars = [], fails = 0, failovers = 0, T = 0, waveStarts = [];
+    function cpuLane() { return free.cpu0 <= free.cpu1 ? 'cpu0' : 'cpu1'; }
+    for (var w = 0; w < p.n; w += p.b) {
+      waveStarts.push(T);
+      var waveEnd = T;
+      for (var i = w; i < Math.min(p.n, w + p.b); i++) {
+        var d = DRAWS[i];
+        var c = cpuLane();
+        var opts = [
+          { lane: 'local', start: Math.max(T, free.local), dur: T_LOCAL + d.jitter, qpu: true, submit: T },
+          { lane: 'remote', start: Math.max(T + p.w, free.remote), dur: T_REMOTE + d.jitter * 0.6, qpu: true, submit: T },
+          { lane: c, start: Math.max(T, free[c]), dur: T_CPU + d.jitter, qpu: false, submit: T }
+        ];
+        // expected finish, counting the chance of a failover to the simulator
+        opts.forEach(function (o) {
+          o.end = o.start + o.dur;
+          o.score = o.end + (o.qpu ? p.f * (T_CPU) : 0);
+        });
+        opts.sort(function (x, y) { return x.score - y.score; });
+        var o = opts[0];
+        var failed = o.qpu && d.fail[0] < p.f;
+        if (o.lane === 'remote' && o.start > o.submit) bars.push({ lane: 'remote', start: o.submit, end: o.start, wait: true, frag: i + 1 });
+        bars.push({ lane: o.lane, start: o.start, end: o.end, frag: i + 1, failed: failed });
+        free[o.lane] = o.end;
+        var end = o.end;
+        if (failed) {
+          fails++; failovers++;
+          var c2 = cpuLane(), s2 = Math.max(o.end, free[c2]);
+          bars.push({ lane: c2, start: s2, end: s2 + T_CPU, frag: i + 1, failover: true });
+          free[c2] = s2 + T_CPU; end = s2 + T_CPU;
+        }
+        waveEnd = Math.max(waveEnd, end);
+      }
+      T = waveEnd + POLL;
+    }
+    return { bars: bars, makespan: T - POLL, fails: fails, failovers: failovers, waves: waveStarts };
+  }
+
+  /* ---------- Drawing ---------- */
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(name, a, parent) {
+    var x = document.createElementNS(NS, name);
+    for (var k in a) x.setAttribute(k, a[k]);
+    if (parent) parent.appendChild(x);
+    return x;
+  }
+
+  function draw(container, sim, scaleMax, title) {
+    var W = Math.max(320, container.clientWidth), labelW = W < 520 ? 78 : 104, laneH = 26, gap = 8, top = 6;
+    var H = top + LANES.length * (laneH + gap) + 22;
+    var plotW = W - labelW - 8;
+    var x = function (t) { return labelW + t / scaleMax * plotW; };
+    container.innerHTML = '';
+    var svg = el('svg', { 'class': 'gantt', viewBox: '0 0 ' + W + ' ' + H, width: W, height: H, role: 'img',
+      'aria-label': title + ': makespan ' + sim.makespan.toFixed(0) + ' time units.' }, container);
+    var defs = el('defs', {}, svg);
+    var pat = el('pattern', { id: 'wait-' + container.id, width: 5, height: 5, patternUnits: 'userSpaceOnUse', patternTransform: 'rotate(45)' }, defs);
+    el('rect', { width: 5, height: 5, fill: 'var(--surface)' }, pat);
+    el('line', { x1: 0, y1: 0, x2: 0, y2: 5, stroke: 'var(--c-remote)', 'stroke-width': 2 }, pat);
+
+    // time grid
+    var step = scaleMax > 120 ? 20 : scaleMax > 60 ? 10 : 5;
+    for (var t = 0; t <= scaleMax; t += step) {
+      el('line', { 'class': 'grid', x1: x(t), x2: x(t), y1: top - 4, y2: H - 20 }, svg);
+      var tx = el('text', { x: x(t), y: H - 6, 'text-anchor': t === 0 ? 'start' : 'middle' }, svg);
+      tx.textContent = t;
+    }
+    var unit = el('text', { x: labelW - 8, y: H - 6, 'text-anchor': 'end' }, svg); unit.textContent = 'time';
+
+    LANES.forEach(function (lane, li) {
+      var y = top + li * (laneH + gap);
+      var lt = el('text', { 'class': 'lane-label', x: 0, y: y + laneH / 2 + 4 }, svg);
+      lt.textContent = lane.label;
+      sim.bars.filter(function (b) { return b.lane === lane.id; }).forEach(function (b) {
+        var bx = x(b.start), bw = Math.max(1.5, x(b.end) - x(b.start));
+        var col = 'var(' + lane.color + ')';
+        var a = { x: bx, y: y + (b.wait ? 6 : 0), width: bw, height: b.wait ? laneH - 12 : laneH, rx: 3 };
+        if (b.wait) { a.fill = 'url(#wait-' + container.id + ')'; a.opacity = .8; }
+        else if (b.failed) { a.fill = 'var(--surface)'; a.stroke = 'var(--c-fail)'; a['stroke-width'] = 2; a.x += 1; a.width = Math.max(1, bw - 2); a.y += 1; a.height -= 2; }
+        else { a.fill = col; }
+        var r = el('rect', a, svg);
+        var tip = el('title', {}, r);
+        tip.textContent = 'Fragment ' + b.frag + (b.wait ? ' waiting in the remote queue' : b.failed ? ' failed' : b.failover ? ' after failover' : '') +
+          ', ' + b.start.toFixed(1) + ' to ' + b.end.toFixed(1);
+        if (!b.wait && bw > 16) {
+          var t2 = el('text', { 'class': 'bar-label', x: bx + bw / 2, y: y + laneH / 2 + 3.5, 'text-anchor': 'middle' }, svg);
+          if (b.failed) t2.style.fill = 'var(--c-fail)';
+          t2.textContent = b.failed ? '×' : b.frag;
+        }
+      });
+    });
+    sim.waves.slice(1).forEach(function (t) {
+      el('line', { 'class': 'wave', x1: x(t), x2: x(t), y1: top - 4, y2: H - 20 }, svg);
+    });
+    // makespan marker
+    el('line', { x1: x(sim.makespan), x2: x(sim.makespan), y1: top - 4, y2: H - 20, stroke: 'var(--text)', 'stroke-width': 1.5 }, svg);
+  }
+
+  /* ---------- Wiring ---------- */
+  var ids = ['n', 'b', 'f', 'w'];
+  var inputs = {};
+  ids.forEach(function (id) { inputs[id] = document.getElementById(id); });
+
+  function params() {
+    return { n: +inputs.n.value, b: +inputs.b.value, f: +inputs.f.value / 100, w: +inputs.w.value };
+  }
+
+  function update() {
+    var p = params();
+    document.getElementById('n-out').textContent = p.n;
+    document.getElementById('b-out').textContent = p.b;
+    document.getElementById('f-out').textContent = Math.round(p.f * 100) + '%';
+    document.getElementById('w-out').textContent = p.w;
+    var s = sequential(p), v = waves(p);
+    var max = Math.max(s.makespan, v.makespan) * 1.02;
+    draw(document.getElementById('chart-seq'), s, max, 'One fragment at a time');
+    draw(document.getElementById('chart-wave'), v, max, 'Waves across every backend');
+    var ratio = s.makespan / v.makespan;
+    document.getElementById('result').innerHTML =
+      'With these settings, waves finish in <strong>' + v.makespan.toFixed(0) + '</strong> time units against ' +
+      s.makespan.toFixed(0) + ' one at a time' + (ratio >= 1.05 ? ' (' + ratio.toFixed(1) + '× faster)' : '') + '. ' +
+      (v.failovers ? v.failovers + (v.failovers === 1 ? ' fragment moved' : ' fragments moved') + ' to a simulator after a failed run.' :
+        'No QPU run failed.');
+  }
+
+  ids.forEach(function (id) { inputs[id].addEventListener('input', update); });
+  var t;
+  window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(update, 120); });
+  update();
+})();
+</script>
+<script src="site.js" defer></script>
+</body>
+</html>

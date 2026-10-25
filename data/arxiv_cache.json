@@ -1,0 +1,38 @@
+{
+  "papers": [
+    {
+      "id": "2610.09659",
+      "version": "v1",
+      "title": "Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation",
+      "abstract": "Distributed quantum circuit simulation enables the execution of large-scale quantum algorithms by partitioning qubits across multiple computational nodes. However, inefficient qubit placement frequently leads to excessive inter-node communication, severely limiting performance and scalability. This work introduces a communication-aware qubit layout optimization framework that systematically minimizes data exchange among nodes while dynamically selecting the optimal number of computational resources. Integrated into the QuCSLO library, our approach supports dynamic node scaling, OpenQASM parsing, and seamless integration with the QuEST simulator. Extensive evaluations on both synthetic benchmarks and real-world QASMBench circuits demonstrate that optimized layouts significantly reduce communication cuts and yield runtime speedups of over 2x compared to identity layouts, particularly in highly entangled circuits. Our results underscore the critical impact of strategic qubit placement on distributed simulation efficiency and provide a practical, resource-scalable solution for quantum workloads.",
+      "authors": [
+        "Íñigo Aréjula-Aísa",
+        "Sergio Iserte",
+        "Petter Sandås",
+        "Ricard S. Raigada-García",
+        "Antonio J. Peña"
+      ],
+      "published": "2026-10-07",
+      "updated": "2026-10-07",
+      "category": "cs.DC",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
+      "id": "2604.15279",
+      "version": "v1",
+      "title": "Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems",
+      "abstract": "Hybrid High-performance Computing (HPC)-quantum workloads based on circuit cutting decompose large quantum circuits into independent fragments, but existing frameworks tightly couple cutting logic to execution orchestration, preventing HPC centers from applying mature resource management policies to Noisy Intermediate-Scale Quantum (NISQ) workloads. We present DQR (Dynamic Queue Router), a runtime framework that bridges this gap by treating circuit fragments as first-class schedulable units. The framework introduces a backend-agnostic fragment descriptor to expose structural properties without requiring execution layers to parse quantum code, a wave-based coordinator that achieves pipeline concurrency via non-blocking polling, and a production-ready implementation on the CESGA Qmio supercomputer integrating both QPUs local on-premises (Qmio) and remote cloud (IBM Torino) backends. Experiments on a 32-qubit Hardware-Efficient Ansatz (HEA) circuit demonstrate not only makespan improvements over a monolithic CPU baseline but also transparent per-fragment failover recovery-specifically rerouting tasks from the local QPU to classical simulators upon encountering hardware-level incompatibilities-without pipeline restart. For deeper circuits, the coordination residual accounts for only 5% of the total execution time, highlighting the framework's scalability. These results show that DQR enables HPC centers to integrate NISQ workloads into existing production infrastructure while preserving the flexibility to adopt improved cutting algorithms or heterogeneous backend technologies.",
+      "authors": [
+        "Ricard S. García-Raigada",
+        "Josep Jorba",
+        "Sergio Iserte"
+      ],
+      "published": "2026-04-16",
+      "updated": "2026-04-16",
+      "category": "cs.DC",
+      "journal_ref": "",
+      "doi": ""
+    }
+  ]
+}

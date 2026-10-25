@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ricard S. Raigada-García · updates</title>
+  <link href="https://raigada-garcia.dev/feed.xml" rel="self"/>
+  <link href="https://raigada-garcia.dev/"/>
+  <id>https://raigada-garcia.dev/</id>
+  <updated>2026-10-25T00:00:00Z</updated>
+  <author><name>Ricard S. Raigada-García</name></author>
+  <entry>
+    <title>New preprint: Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation.</title>
+    <id>tag:raigada-garcia.dev,2026-10-07:new-preprint-communication-aware-qubit-placement-and-automat</id>
+    <link href="https://raigada-garcia.dev/papers/2610.09659.html"/>
+    <updated>2026-10-07T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <title>Presented the DQR poster at ACM ICS 2026 in Belfast.</title>
+    <id>tag:raigada-garcia.dev,2026-07-01:presented-the-dqr-poster-at-acm-ics-2026-in-belfast</id>
+    <link href="https://raigada-garcia.dev/assets/posters/raigada-garcia-ics2026-poster.pdf"/>
+    <updated>2026-07-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <title>New preprint: Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems.</title>
+    <id>tag:raigada-garcia.dev,2026-04-16:new-preprint-wave-based-dispatch-for-circuit-cutting-in-hybr</id>
+    <link href="https://raigada-garcia.dev/papers/2604.15279.html"/>
+    <updated>2026-04-16T00:00:00Z</updated>
+  </entry>
+</feed>

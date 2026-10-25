@@ -45,21 +45,20 @@ Interactive [research map](https://raigada-garcia.dev/research-map.html).
 
 ## Publications
 
-Full list on [ORCID](https://orcid.org/0009-0009-9684-4745).
+Full list on [ORCID](https://orcid.org/0009-0009-9684-4745). This section is generated from arXiv by `scripts/build.py`.
 
+<!-- BUILD:README-PUBLICATIONS -->
 ### Preprints
 
-- **2026** — **Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation**\
-  Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, ***R. S. Raigada-García***, Antonio J. Peña\
-  *arXiv preprint arXiv:2610.09659 · 7 October 2026*\
-  A communication-aware qubit-layout framework that reduces inter-node data exchange while selecting the number of computational nodes automatically. Integrated into QuCSLO, it supports dynamic node scaling, OpenQASM parsing and QuEST; evaluations on synthetic and QASMBench circuits show fewer communication cuts and runtime speedups above 2× over identity layouts, particularly for highly entangled circuits.\
+- **2026** — **Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation**  
+  Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, ***Ricard S. Raigada-García***, Antonio J. Peña  
+  *arXiv:2610.09659 [cs.DC]*  
   [arXiv](https://arxiv.org/abs/2610.09659) · [PDF](https://arxiv.org/pdf/2610.09659)
 
 - **2026** — **Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems**  
-  ***R. S. Raigada-García***, J. Jorba, S. Iserte  
+  ***Ricard S. García-Raigada***, Josep Jorba, Sergio Iserte  
   *arXiv:2604.15279 [cs.DC]*  
-  DQR (Dynamic Queue Router), a runtime that treats circuit-cutting fragments as schedulable units, so HPC centres can apply standard resource management to NISQ workloads. Evaluated on the CESGA Qmio supercomputer with its local QPU and the remote IBM Torino backend, with per-fragment failover to classical simulators.  
-  [arXiv](https://arxiv.org/abs/2604.15279) · [PDF](https://arxiv.org/pdf/2604.15279)
+  [arXiv](https://arxiv.org/abs/2604.15279) · [PDF](https://arxiv.org/pdf/2604.15279) · [Interactive explainer](https://raigada-garcia.dev/dqr-explainer.html)
 
 ### Theses, reports & other works
 
@@ -82,6 +81,8 @@ Full list on [ORCID](https://orcid.org/0009-0009-9684-4745).
   ***R. S. Raigada García***  
   *Technical report, Universitat Oberta de Catalunya*  
   [DOI](https://doi.org/10.13140/RG.2.2.24291.77608) · [UOC repository](http://hdl.handle.net/10609/150164)
+
+<!-- /BUILD:README-PUBLICATIONS -->
 
 ## Talks & Posters
 

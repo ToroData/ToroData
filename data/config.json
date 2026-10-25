@@ -1,0 +1,35 @@
+{
+  "site_url": "https://raigada-garcia.dev",
+  "orcid": "0009-0009-9684-4745",
+  "display_name": "Ricard S. Raigada-García",
+  "author_match": {
+    "surname_token": "raigada",
+    "given_initial": "r"
+  },
+  "arxiv_name_queries": [
+    "au:Raigada",
+    "au:Raigada_Garcia",
+    "au:Raigada_García",
+    "au:Raigada-Garcia",
+    "au:Raigada-García",
+    "au:Garcia-Raigada",
+    "au:García-Raigada"
+  ],
+  "contact": "https://www.linkedin.com/in/ricard-santiago-raigada-garcia/",
+  "exclude_arxiv_ids": [],
+  "include_arxiv_ids": [
+    "2604.15279",
+    "2610.09659"
+  ],
+  "static_pages": [
+    {
+      "path": "research-map.html",
+      "lastmod": "2026-10-24"
+    },
+    {
+      "path": "dqr-explainer.html",
+      "lastmod": "2026-10-25"
+    }
+  ],
+  "bib_name": "Raigada-García, Ricard S."
+}

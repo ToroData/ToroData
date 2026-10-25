@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems · Ricard S. Raigada-García</title>
+  <meta name="description" content="DQR (Dynamic Queue Router), a runtime that treats circuit-cutting fragments as schedulable units, so HPC centres can apply standard resource management to NI…">
+  <link rel="canonical" href="https://raigada-garcia.dev/papers/2604.15279.html">
+  <!-- Highwire Press tags, read by Google Scholar and reference managers -->
+  <meta name="citation_title" content="Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems">
+  <meta name="citation_author" content="Ricard S. García-Raigada">
+  <meta name="citation_author" content="Josep Jorba">
+  <meta name="citation_author" content="Sergio Iserte">
+  <meta name="citation_publication_date" content="2026/04/16">
+  <meta name="citation_online_date" content="2026/04/16">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2604.15279">
+  <meta name="citation_abstract_html_url" content="https://raigada-garcia.dev/papers/2604.15279.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://raigada-garcia.dev/papers/2604.15279.html">
+  <meta property="og:title" content="Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems">
+  <meta property="og:description" content="DQR (Dynamic Queue Router), a runtime that treats circuit-cutting fragments as schedulable units, so HPC centres can apply standard resource management to NI…">
+  <meta property="og:image" content="https://raigada-garcia.dev/assets/img/og-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png">
+  <link rel="alternate" type="application/atom+xml" title="Updates" href="../feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=3">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems",
+  "abstract": "Hybrid High-performance Computing (HPC)-quantum workloads based on circuit cutting decompose large quantum circuits into independent fragments, but existing frameworks tightly couple cutting logic to execution orchestration, preventing HPC centers from applying mature resource management policies to Noisy Intermediate-Scale Quantum (NISQ) workloads. We present DQR (Dynamic Queue Router), a runtime framework that bridges this gap by treating circuit fragments as first-class schedulable units. The framework introduces a backend-agnostic fragment descriptor to expose structural properties without requiring execution layers to parse quantum code, a wave-based coordinator that achieves pipeline concurrency via non-blocking polling, and a production-ready implementation on the CESGA Qmio supercomputer integrating both QPUs local on-premises (Qmio) and remote cloud (IBM Torino) backends. Experiments on a 32-qubit Hardware-Efficient Ansatz (HEA) circuit demonstrate not only makespan improvements over a monolithic CPU baseline but also transparent per-fragment failover recovery-specifically rerouting tasks from the local QPU to classical simulators upon encountering hardware-level incompatibilities-without pipeline restart. For deeper circuits, the coordination residual accounts for only 5% of the total execution time, highlighting the framework's scalability. These results show that DQR enables HPC centers to integrate NISQ workloads into existing production infrastructure while preserving the flexibility to adopt improved cutting algorithms or heterogeneous backend technologies.",
+  "datePublished": "2026-04-16",
+  "url": "https://raigada-garcia.dev/papers/2604.15279.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2604.15279"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Ricard S. García-Raigada",
+      "url": "https://raigada-garcia.dev/"
+    },
+    {
+      "@type": "Person",
+      "name": "Josep Jorba"
+    },
+    {
+      "@type": "Person",
+      "name": "Sergio Iserte"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../index.html">R. S. Raigada-García</a>
+  <nav class="nav" aria-label="Site">
+    <a href="../index.html#research">Research</a>
+    <a href="../index.html#publications">Publications</a>
+    <a href="../research-map.html">Research map</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+<main class="paper" id="main">
+  <p class="paper-kind">Preprint · arXiv:2604.15279 [cs.DC] · Apr 2026</p>
+  <h1>Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</h1>
+  <p class="pub-authors"><span class="me">Ricard S. García-Raigada</span>, Josep Jorba, Sergio Iserte</p>
+  <p class="pub-links"><a href="https://arxiv.org/abs/2604.15279">arXiv</a> <a href="https://arxiv.org/pdf/2604.15279">PDF</a> <a href="../dqr-explainer.html">Interactive explainer</a></p>
+  <h2>Abstract</h2>
+  <p class="paper-abstract">Hybrid High-performance Computing (HPC)-quantum workloads based on circuit cutting decompose large quantum circuits into independent fragments, but existing frameworks tightly couple cutting logic to execution orchestration, preventing HPC centers from applying mature resource management policies to Noisy Intermediate-Scale Quantum (NISQ) workloads. We present DQR (Dynamic Queue Router), a runtime framework that bridges this gap by treating circuit fragments as first-class schedulable units. The framework introduces a backend-agnostic fragment descriptor to expose structural properties without requiring execution layers to parse quantum code, a wave-based coordinator that achieves pipeline concurrency via non-blocking polling, and a production-ready implementation on the CESGA Qmio supercomputer integrating both QPUs local on-premises (Qmio) and remote cloud (IBM Torino) backends. Experiments on a 32-qubit Hardware-Efficient Ansatz (HEA) circuit demonstrate not only makespan improvements over a monolithic CPU baseline but also transparent per-fragment failover recovery-specifically rerouting tasks from the local QPU to classical simulators upon encountering hardware-level incompatibilities-without pipeline restart. For deeper circuits, the coordination residual accounts for only 5% of the total execution time, highlighting the framework&#x27;s scalability. These results show that DQR enables HPC centers to integrate NISQ workloads into existing production infrastructure while preserving the flexibility to adopt improved cutting algorithms or heterogeneous backend technologies.</p>
+  <h2>Cite</h2>
+  <pre id="bib">@misc{raigadagarcia2026wave,
+  title = {{Wave-Based Dispatch for Circuit Cutting in Hybrid HPC--Quantum Systems}},
+  author = {Raigada-García, Ricard S. and Jorba, Josep and Iserte, Sergio},
+  year = {2026},
+  eprint = {2604.15279},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.DC},
+  url = {https://arxiv.org/abs/2604.15279}
+}</pre>
+  <button type="button" class="copy" data-copy="bib">Copy BibTeX</button>
+  <p class="paper-back"><a href="../index.html#publications">All publications</a></p>
+</main>
+<script src="../site.js" defer></script>
+</body>
+</html>
