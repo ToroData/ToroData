@@ -2,6 +2,11 @@
   "_comment": "The build sorts by date. Items with an 'arxiv' field take their date from the arXiv record. Items with \"auto\": true are added by the arXiv sync.",
   "items": [
     {
+      "date": "2026-10-31",
+      "text": "Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems accepted for publication in FCGS (October 2026).",
+      "url": "papers/2604.15279.html"
+    },
+    {
       "date": "2026-07-01",
       "text": "Presented the DQR poster at ACM ICS 2026 in Belfast.",
       "url": "assets/posters/raigada-garcia-ics2026-poster.pdf"
@@ -17,6 +22,12 @@
       "url": "papers/2610.09659.html",
       "auto": true,
       "arxiv": "2610.09659"
+    },
+    {
+      "text": "New preprint: Enabling Dynamic Resource Scaling in Quantum Circuit Simulations.",
+      "url": "papers/2610.39824.html",
+      "auto": true,
+      "arxiv": "2610.39824"
     }
   ]
 }

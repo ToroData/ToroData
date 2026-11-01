@@ -4,8 +4,20 @@
   <link href="https://raigada-garcia.dev/feed.xml" rel="self"/>
   <link href="https://raigada-garcia.dev/"/>
   <id>https://raigada-garcia.dev/</id>
-  <updated>2026-10-25T00:00:00Z</updated>
+  <updated>2026-10-31T00:00:00Z</updated>
   <author><name>Ricard S. Raigada-García</name></author>
+  <entry>
+    <title>Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems accepted for publication in FCGS (October 2026).</title>
+    <id>tag:raigada-garcia.dev,2026-10-31:wave-based-dispatch-for-circuit-cutting-in-hybrid-hpc-quantu</id>
+    <link href="https://raigada-garcia.dev/papers/2604.15279.html"/>
+    <updated>2026-10-31T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <title>New preprint: Enabling Dynamic Resource Scaling in Quantum Circuit Simulations.</title>
+    <id>tag:raigada-garcia.dev,2026-10-29:new-preprint-enabling-dynamic-resource-scaling-in-quantum-ci</id>
+    <link href="https://raigada-garcia.dev/papers/2610.39824.html"/>
+    <updated>2026-10-29T00:00:00Z</updated>
+  </entry>
   <entry>
     <title>New preprint: Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation.</title>
     <id>tag:raigada-garcia.dev,2026-10-07:new-preprint-communication-aware-qubit-placement-and-automat</id>

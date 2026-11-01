@@ -50,36 +50,41 @@ Full list on [ORCID](https://orcid.org/0009-0009-9684-4745). This section is gen
 <!-- BUILD:README-PUBLICATIONS -->
 ### Preprints
 
-- **2026** — **Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation**  
-  Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, ***Ricard S. Raigada-García***, Antonio J. Peña  
-  *arXiv:2610.09659 [cs.DC]*  
+- **2026** — **Enabling Dynamic Resource Scaling in Quantum Circuit Simulations**<br>
+  Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, ***Ricard S. Raigada-García***, Oliver Brown, James Richings, Antonio J. Peña<br>
+  *arXiv:2610.39824 [cs.DC]*<br>
+  [arXiv](https://arxiv.org/abs/2610.39824) · [PDF](https://arxiv.org/pdf/2610.39824)
+
+- **2026** — **Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation**<br>
+  Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, ***Ricard S. Raigada-García***, Antonio J. Peña<br>
+  *arXiv:2610.09659 [cs.DC]*<br>
   [arXiv](https://arxiv.org/abs/2610.09659) · [PDF](https://arxiv.org/pdf/2610.09659)
 
-- **2026** — **Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems**  
-  ***Ricard S. García-Raigada***, Josep Jorba, Sergio Iserte  
-  *arXiv:2604.15279 [cs.DC]*  
+- **2026** — **Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems**<br>
+  ***Ricard S. García-Raigada***, Josep Jorba, Sergio Iserte<br>
+  *arXiv:2604.15279 [cs.DC]*<br>
   [arXiv](https://arxiv.org/abs/2604.15279) · [PDF](https://arxiv.org/pdf/2604.15279) · [Interactive explainer](https://raigada-garcia.dev/dqr-explainer.html)
 
 ### Theses, reports & other works
 
-- **2025** — **Emergent Geometrodynamic Intelligence in Transformers: Lagrangian Dynamics, Gauge Symmetries, and Holographic Emergence**  
-  ***R. S. Raigada García***  
-  *Universitat Oberta de Catalunya · Zenodo*  
+- **2025** — **Emergent Geometrodynamic Intelligence in Transformers: Lagrangian Dynamics, Gauge Symmetries, and Holographic Emergence**<br>
+  ***R. S. Raigada García***<br>
+  *Universitat Oberta de Catalunya · Zenodo*<br>
   [DOI](https://doi.org/10.5281/zenodo.15772617)
 
-- **2025** — **Quantum Database Architecture for the Quantum Data Scientist: A Theoretical Treatise on Lindblad Operators, EIT in Multi-Level Atomic Ensembles, and High-Fidelity Data Encoding**  
-  ***R. S. Raigada García***  
-  *Master's thesis, Universitat Oberta de Catalunya*  
+- **2025** — **Quantum Database Architecture for the Quantum Data Scientist: A Theoretical Treatise on Lindblad Operators, EIT in Multi-Level Atomic Ensembles, and High-Fidelity Data Encoding**<br>
+  ***R. S. Raigada García***<br>
+  *Master's thesis, Universitat Oberta de Catalunya*<br>
   [DOI](https://doi.org/10.5281/zenodo.14810946) · [UOC repository](http://hdl.handle.net/10609/152040) · [Code](https://github.com/ToroData/Quantum-Database-Architecture-for-the-Quantum-Data-Scientist-Thesis)
 
-- **2025** — **Symmetries in Quantum Mechanics: from Klein-Gordon Equation to Higgs Mechanism**  
-  ***R. S. Raigada García***  
-  *Zenodo (MITx 8.06x)*  
+- **2025** — **Symmetries in Quantum Mechanics: from Klein-Gordon Equation to Higgs Mechanism**<br>
+  ***R. S. Raigada García***<br>
+  *Zenodo (MITx 8.06x)*<br>
   [DOI](https://doi.org/10.5281/zenodo.14774610)
 
-- **2024** — **Optimizing Quantum Circuits for Efficient Execution on Superconducting Hardware: A Case Study of the Cuccaro Adder**  
-  ***R. S. Raigada García***  
-  *Technical report, Universitat Oberta de Catalunya*  
+- **2024** — **Optimizing Quantum Circuits for Efficient Execution on Superconducting Hardware: A Case Study of the Cuccaro Adder**<br>
+  ***R. S. Raigada García***<br>
+  *Technical report, Universitat Oberta de Catalunya*<br>
   [DOI](https://doi.org/10.13140/RG.2.2.24291.77608) · [UOC repository](http://hdl.handle.net/10609/150164)
 
 <!-- /BUILD:README-PUBLICATIONS -->

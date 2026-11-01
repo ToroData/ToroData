@@ -19,7 +19,8 @@
   "exclude_arxiv_ids": [],
   "include_arxiv_ids": [
     "2604.15279",
-    "2610.09659"
+    "2610.09659",
+    "2610.39824"
   ],
   "static_pages": [
     {

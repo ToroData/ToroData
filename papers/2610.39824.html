@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enabling Dynamic Resource Scaling in Quantum Circuit Simulations · Ricard S. Raigada-García</title>
+  <meta name="description" content="We extend QuEST with Dynamic Management of Resources so a single HPC job can resize between quantum circuits of different sizes. A qubit-based policy selects…">
+  <link rel="canonical" href="https://raigada-garcia.dev/papers/2610.39824.html">
+  <!-- Highwire Press tags, read by Google Scholar and reference managers -->
+  <meta name="citation_title" content="Enabling Dynamic Resource Scaling in Quantum Circuit Simulations">
+  <meta name="citation_author" content="Íñigo Aréjula-Aísa">
+  <meta name="citation_author" content="Sergio Iserte">
+  <meta name="citation_author" content="Petter Sandås">
+  <meta name="citation_author" content="Ricard S. Raigada-García">
+  <meta name="citation_author" content="Oliver Brown">
+  <meta name="citation_author" content="James Richings">
+  <meta name="citation_author" content="Antonio J. Peña">
+  <meta name="citation_publication_date" content="2026/10/29">
+  <meta name="citation_online_date" content="2026/10/29">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2610.39824">
+  <meta name="citation_abstract_html_url" content="https://raigada-garcia.dev/papers/2610.39824.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://raigada-garcia.dev/papers/2610.39824.html">
+  <meta property="og:title" content="Enabling Dynamic Resource Scaling in Quantum Circuit Simulations">
+  <meta property="og:description" content="We extend QuEST with Dynamic Management of Resources so a single HPC job can resize between quantum circuits of different sizes. A qubit-based policy selects…">
+  <meta property="og:image" content="https://raigada-garcia.dev/assets/img/og-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png">
+  <link rel="alternate" type="application/atom+xml" title="Updates" href="../feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=3">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Enabling Dynamic Resource Scaling in Quantum Circuit Simulations",
+  "abstract": "Studies of quantum algorithms often simulate se- quences of circuits whose number of qubits changes from one circuit to the next, such as instances of increasing size of the same problem. Since each additional qubit doubles the state- vector, every circuit needs a different number of nodes, which a fixed allocation on a shared High-Performance Computing (HPC) system cannot provide: a job sized for the largest circuit leaves most of its nodes idle, and one job per circuit adds scheduler interactions and queue waits. We make the QuEST state-vector simulator malleable with the Dynamic Management of Resources (DMR) framework, so that a single job resizes between circuits. Because no state-vector exists between circuits, reconfigurations require no data redistribution and no changes to the simulation kernels, and a checkpoint holding the index of the next circuit is enough to resume. A right-sizing policy derives the number of nodes from the number of qubits, and the circuit_executor API hides reconfigurations from the user. We evaluate the reconfiguration overhead on MareNostrum 5 and show that a single job can run a batch of circuits of different sizes, adapting its allocation to each of them with negligible overhead.",
+  "datePublished": "2026-10-29",
+  "url": "https://raigada-garcia.dev/papers/2610.39824.html",
+  "sameAs": [
+    "https://arxiv.org/abs/2610.39824"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Íñigo Aréjula-Aísa"
+    },
+    {
+      "@type": "Person",
+      "name": "Sergio Iserte"
+    },
+    {
+      "@type": "Person",
+      "name": "Petter Sandås"
+    },
+    {
+      "@type": "Person",
+      "name": "Ricard S. Raigada-García",
+      "url": "https://raigada-garcia.dev/"
+    },
+    {
+      "@type": "Person",
+      "name": "Oliver Brown"
+    },
+    {
+      "@type": "Person",
+      "name": "James Richings"
+    },
+    {
+      "@type": "Person",
+      "name": "Antonio J. Peña"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../index.html">R. S. Raigada-García</a>
+  <nav class="nav" aria-label="Site">
+    <a href="../index.html#research">Research</a>
+    <a href="../index.html#publications">Publications</a>
+    <a href="../research-map.html">Research map</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+<main class="paper" id="main">
+  <p class="paper-kind">Preprint · arXiv:2610.39824 [cs.DC] · Oct 2026</p>
+  <h1>Enabling Dynamic Resource Scaling in Quantum Circuit Simulations</h1>
+  <p class="pub-authors">Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, <span class="me">Ricard S. Raigada-García</span>, Oliver Brown, James Richings, Antonio J. Peña</p>
+  <p class="pub-links"><a href="https://arxiv.org/abs/2610.39824">arXiv</a> <a href="https://arxiv.org/pdf/2610.39824">PDF</a></p>
+  <h2>Abstract</h2>
+  <p class="paper-abstract">Studies of quantum algorithms often simulate se- quences of circuits whose number of qubits changes from one circuit to the next, such as instances of increasing size of the same problem. Since each additional qubit doubles the state- vector, every circuit needs a different number of nodes, which a fixed allocation on a shared High-Performance Computing (HPC) system cannot provide: a job sized for the largest circuit leaves most of its nodes idle, and one job per circuit adds scheduler interactions and queue waits. We make the QuEST state-vector simulator malleable with the Dynamic Management of Resources (DMR) framework, so that a single job resizes between circuits. Because no state-vector exists between circuits, reconfigurations require no data redistribution and no changes to the simulation kernels, and a checkpoint holding the index of the next circuit is enough to resume. A right-sizing policy derives the number of nodes from the number of qubits, and the circuit_executor API hides reconfigurations from the user. We evaluate the reconfiguration overhead on MareNostrum 5 and show that a single job can run a batch of circuits of different sizes, adapting its allocation to each of them with negligible overhead.</p>
+  <h2>Cite</h2>
+  <pre id="bib">@misc{arejulaaisa2026enabling,
+  title = {{Enabling Dynamic Resource Scaling in Quantum Circuit Simulations}},
+  author = {Aréjula-Aísa, Íñigo and Iserte, Sergio and Sandås, Petter and Raigada-García, Ricard S. and Brown, Oliver and Richings, James and Peña, Antonio J.},
+  year = {2026},
+  eprint = {2610.39824},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.DC},
+  url = {https://arxiv.org/abs/2610.39824}
+}</pre>
+  <button type="button" class="copy" data-copy="bib">Copy BibTeX</button>
+  <p class="paper-back"><a href="../index.html#publications">All publications</a></p>
+</main>
+<script src="../site.js" defer></script>
+</body>
+</html>

@@ -1,6 +1,26 @@
 {
   "papers": [
     {
+      "id": "2610.39824",
+      "version": "v1",
+      "title": "Enabling Dynamic Resource Scaling in Quantum Circuit Simulations",
+      "abstract": "Studies of quantum algorithms often simulate se- quences of circuits whose number of qubits changes from one circuit to the next, such as instances of increasing size of the same problem. Since each additional qubit doubles the state- vector, every circuit needs a different number of nodes, which a fixed allocation on a shared High-Performance Computing (HPC) system cannot provide: a job sized for the largest circuit leaves most of its nodes idle, and one job per circuit adds scheduler interactions and queue waits. We make the QuEST state-vector simulator malleable with the Dynamic Management of Resources (DMR) framework, so that a single job resizes between circuits. Because no state-vector exists between circuits, reconfigurations require no data redistribution and no changes to the simulation kernels, and a checkpoint holding the index of the next circuit is enough to resume. A right-sizing policy derives the number of nodes from the number of qubits, and the circuit_executor API hides reconfigurations from the user. We evaluate the reconfiguration overhead on MareNostrum 5 and show that a single job can run a batch of circuits of different sizes, adapting its allocation to each of them with negligible overhead.",
+      "authors": [
+        "Íñigo Aréjula-Aísa",
+        "Sergio Iserte",
+        "Petter Sandås",
+        "Ricard S. Raigada-García",
+        "Oliver Brown",
+        "James Richings",
+        "Antonio J. Peña"
+      ],
+      "published": "2026-10-29",
+      "updated": "2026-10-29",
+      "category": "cs.DC",
+      "journal_ref": "",
+      "doi": ""
+    },
+    {
       "id": "2610.09659",
       "version": "v1",
       "title": "Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation",

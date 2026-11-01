@@ -415,7 +415,7 @@ def readme_publications(pubs, cfg):
             authors = ", ".join(f"***{a}***" if is_me(a, cfg) else a for a in p["authors"])
             links = " · ".join(f"[{l['label']}]({l['url'] if re.match(r'^[a-z]+:', l['url']) else cfg['site_url'] + '/' + l['url']})"
                                for l in p["links"])
-            out.append(f"- **{p['year']}** — **{p['title']}**  \n  {authors}  \n  *{p['venue']}*  \n  {links}\n")
+            out.append(f"- **{p['year']}** — **{p['title']}**<br>\n  {authors}<br>\n  *{p['venue']}*<br>\n  {links}\n")
     return "\n".join(out)
 
 

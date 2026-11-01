@@ -7,6 +7,9 @@
     },
     "2610.09659": {
       "summary": "A communication-aware qubit-layout framework that reduces inter-node data exchange while selecting the number of computational nodes automatically. Integrated into QuCSLO, it supports dynamic node scaling, OpenQASM parsing and QuEST; evaluations on synthetic and QASMBench circuits show fewer communication cuts and runtime speedups above 2× over identity layouts, particularly for highly entangled circuits."
+    },
+    "2610.39824": {
+      "summary": "We extend QuEST with Dynamic Management of Resources so a single HPC job can resize between quantum circuits of different sizes. A qubit-based policy selects node counts, and checkpointing resumes at the next circuit. Experiments on MareNostrum 5 show negligible reconfiguration overhead."
     }
   },
   "manual": [
