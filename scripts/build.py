@@ -314,17 +314,29 @@ def news_html(items, limit=6):
 
 def ld_publications(pubs, cfg):
     graph = []
+    article_ids = []
     for p in pubs:
         if not p["arxiv"]:
             continue
+        aid = f"{cfg['site_url']}/{p['page']}#article"
+        article_ids.append(aid)
         graph.append({
             "@type": "ScholarlyArticle",
-            "@id": f"{cfg['site_url']}/{p['page']}#article",
+            "@id": aid,
             "headline": p["title"], "datePublished": p["date"], "url": f"{cfg['site_url']}/{p['page']}",
             "sameAs": [f"https://arxiv.org/abs/{p['arxiv']}"] + ([f"https://doi.org/{p['doi']}"] if p["doi"] else []),
             "author": [{"@id": f"{cfg['site_url']}/#person"} if is_me(a, cfg) else {"@type": "Person", "name": a}
                        for a in p["authors"]],
         })
+    graph.append({
+        "@type": "CollectionPage",
+        "@id": f"{cfg['site_url']}/#publications",
+        "url": f"{cfg['site_url']}/#publications",
+        "name": f"Publications — {cfg['display_name']}",
+        "isPartOf": {"@id": f"{cfg['site_url']}/#page"},
+        "about": {"@id": f"{cfg['site_url']}/#person"},
+        "hasPart": [{"@id": a} for a in article_ids],
+    })
     body = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, indent=2)
     return f'  <script type="application/ld+json">\n{body}\n  </script>'
 
@@ -374,6 +386,27 @@ def paper_page(p, cfg):
   <script type="application/ld+json">
 {ld}
   </script>
+
+<!-- Google Tag Manager (with Consent Mode v2) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  (function () {{
+    var stored = null;
+    try {{ stored = JSON.parse(localStorage.getItem('consent-v1')); }} catch (e) {{}}
+    gtag('consent', 'default', {{
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': stored && stored.analytics ? 'granted' : 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted',
+      'wait_for_update': 500
+    }});
+  }})();
+  gtag('js', new Date());
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MDBGWZ72"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>

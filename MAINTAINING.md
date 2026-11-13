@@ -26,3 +26,16 @@ python -m http.server            # then open http://localhost:8000
 For the most reliable matching, link your ORCID in your arXiv account
 (arXiv > Account > Link ORCID). The sync reads `arxiv.org/a/<ORCID>` first and
 only falls back to a name search.
+
+## Analytics, consent and discoverability
+
+See `docs/analytics-and-discoverability.md` for the manual steps that pair with
+the code already in the site: GTM `GTM-MDBGWZ72` configuration, GA4 key events
+and audiences, Bing Webmaster + IndexNow, Wikidata item, DBLP request.
+
+After publishing changes, ping IndexNow (notifies Bing, Yandex and ChatGPT
+search):
+
+```sh
+scripts/indexnow.sh
+```

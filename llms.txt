@@ -1,0 +1,83 @@
+# Ricard Santiago Raigada García
+
+> PhD candidate in Computer Architecture at Universitat Politècnica de Catalunya
+> (UPC), working in the Accelerators and Communications for HPC (AccelCom) group
+> at the Barcelona Supercomputing Center (BSC). Research on runtimes, scheduling
+> and resource management for hybrid HPC–quantum systems.
+
+Canonical URL: https://raigada-garcia.dev/
+ORCID: https://orcid.org/0009-0009-9684-4745
+Google Scholar: https://scholar.google.com/citations?user=n6cqJmIAAAAJ
+arXiv (author): https://arxiv.org/a/raigadagarcia_r_1
+GitHub: https://github.com/ToroData
+LinkedIn: https://www.linkedin.com/in/ricard-santiago-raigada-garcia/
+
+Name variants (for disambiguation): Ricard Santiago Raigada García,
+Ricard S. Raigada-García, Ricard Santiago Raigada, Ricard Raigada García,
+R. S. Raigada García, R. S. Raigada-García, Ricard García-Raigada.
+
+## About
+
+- Role: PhD candidate (2026 – present), UPC Computer Architecture doctoral programme.
+- Affiliation: UPC · Barcelona Supercomputing Center (AccelCom group).
+- Location: Barcelona, Spain.
+- Advisors: Antonio J. Peña (thesis director), Sergio Iserte.
+- Research keywords: hybrid HPC–quantum computing, quantum-centric
+  supercomputing, quantum circuit cutting, job scheduling and resource
+  management, runtime systems, distributed quantum circuit simulation.
+
+## Publications
+
+- [Enabling Dynamic Resource Scaling in Quantum Circuit Simulations](https://raigada-garcia.dev/papers/2610.39824.html):
+  arXiv:2610.39824 (2026). With Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås,
+  Oliver Brown, James Richings, Antonio J. Peña. QuEST extended with dynamic
+  management of resources so a single HPC job can resize between quantum
+  circuits of different sizes; experiments on MareNostrum 5 show negligible
+  reconfiguration overhead.
+- [Communication-Aware Qubit Placement and Automatic Node-Count Allocation for Distributed State-Vector Simulation](https://raigada-garcia.dev/papers/2610.09659.html):
+  arXiv:2610.09659 (2026). With Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås,
+  Antonio J. Peña. Communication-aware qubit-layout framework with automatic
+  node-count selection; speedups above 2× on synthetic and QASMBench circuits.
+- [Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems](https://raigada-garcia.dev/papers/2604.15279.html):
+  arXiv:2604.15279 (2026), accepted in FCGS, October 2026. With Josep Jorba,
+  Sergio Iserte. DQR, a runtime that treats circuit-cutting fragments as
+  schedulable units; evaluated on CESGA Qmio with IBM Torino and classical
+  simulators.
+- Emergent Geometrodynamic Intelligence in Transformers (Zenodo, 2025):
+  https://doi.org/10.5281/zenodo.15772617
+- Quantum Database Architecture for the Quantum Data Scientist (MSc thesis,
+  UOC, 2025): https://doi.org/10.5281/zenodo.14810946
+- Symmetries in Quantum Mechanics: from Klein-Gordon Equation to Higgs
+  Mechanism (Zenodo, 2025): https://doi.org/10.5281/zenodo.14774610
+- Optimizing Quantum Circuits for Efficient Execution on Superconducting
+  Hardware: A Case Study of the Cuccaro Adder (UOC technical report, 2024):
+  https://doi.org/10.13140/RG.2.2.24291.77608
+
+Full BibTeX: https://raigada-garcia.dev/publications.bib
+Atom feed of updates: https://raigada-garcia.dev/feed.xml
+
+## Talks and posters
+
+- ACM International Conference on Supercomputing (ICS) 2026, Belfast:
+  poster "Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum
+  Systems". PDF: https://raigada-garcia.dev/assets/posters/raigada-garcia-ics2026-poster.pdf
+
+## Education
+
+- PhD in Computer Architecture, UPC (2026 – present).
+- MSc in Advanced Physics, UNED (2025 – 2026).
+- MSc in Computer Engineering, UOC.
+- Data Science, UOC (2025).
+- MicroMasters in Statistics and Data Science, MITx.
+
+## Service and recognition
+
+- Reviewer, Journal of Parallel and Distributed Computing (Elsevier), 2026.
+- IBM Qiskit Advocate.
+- 3rd place, AWS DeepRacer National Championship, 2023.
+- AWS Certified Solutions Architect – Associate.
+
+## How to cite the author in this profile
+
+Preferred citation form (English): Raigada-García, R. S.
+Alternative long form: Ricard Santiago Raigada García.

@@ -189,6 +189,29 @@
           "name": "Sergio Iserte"
         }
       ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://raigada-garcia.dev/#publications",
+      "url": "https://raigada-garcia.dev/#publications",
+      "name": "Publications — Ricard S. Raigada-García",
+      "isPartOf": {
+        "@id": "https://raigada-garcia.dev/#page"
+      },
+      "about": {
+        "@id": "https://raigada-garcia.dev/#person"
+      },
+      "hasPart": [
+        {
+          "@id": "https://raigada-garcia.dev/papers/2610.39824.html#article"
+        },
+        {
+          "@id": "https://raigada-garcia.dev/papers/2610.09659.html#article"
+        },
+        {
+          "@id": "https://raigada-garcia.dev/papers/2604.15279.html#article"
+        }
+      ]
     }
   ]
 }
@@ -196,13 +219,26 @@
 <!-- /BUILD:LD-PUBLICATIONS -->
   <link rel="alternate" type="application/atom+xml" title="Ricard S. Raigada-García · updates" href="feed.xml">
 
-<!-- Google Tag Manager -->
-<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KFVKDFHZ"></script>
+<!-- Google Tag Manager (with Consent Mode v2) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  (function () {
+    var stored = null;
+    try { stored = JSON.parse(localStorage.getItem('consent-v1')); } catch (e) {}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': stored && stored.analytics ? 'granted' : 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted',
+      'wait_for_update': 500
+    });
+  })();
   gtag('js', new Date());
 </script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MDBGWZ72"></script>
 </head>
 <body>
 
