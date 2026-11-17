@@ -3,7 +3,23 @@
   "overrides": {
     "2604.15279": {
       "summary": "DQR (Dynamic Queue Router), a runtime that treats circuit-cutting fragments as schedulable units, so HPC centres can apply standard resource management to NISQ workloads. Evaluated on the CESGA Qmio supercomputer with its local QPU and the remote IBM Torino backend, with per-fragment failover to classical simulators.",
-      "explainer": "dqr-explainer.html"
+      "explainer": "dqr-explainer.html",
+      "video": {
+        "src": "assets/video/dqr_dispatch_narrated.mp4",
+        "poster": "assets/video/dqr_dispatch_narrated-poster.webp",
+        "title": "DQR: wave-based dispatch of circuit-cutting fragments (video explainer)",
+        "description": "A narrated walkthrough of DQR: how a cut circuit becomes schedulable fragments, dispatched in waves across a local QPU, a remote QPU and classical simulators with per-fragment failover",
+        "upload_date": "2026-11-17",
+        "duration": "PT1M18S",
+        "length_label": "1 min 18 s",
+        "lang": "en",
+        "captions": "assets/video/dqr_dispatch_narrated.en.vtt"
+      },
+      "group": "peer",
+      "doi": "10.1016/j.future.2026.108903",
+      "year": 2027,
+      "venue": "Future Generation Computer Systems 189, 108903",
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0167739X26005376"
     },
     "2610.09659": {
       "summary": "A communication-aware qubit-layout framework that reduces inter-node data exchange while selecting the number of computational nodes automatically. Integrated into QuCSLO, it supports dynamic node scaling, OpenQASM parsing and QuEST; evaluations on synthetic and QASMBench circuits show fewer communication cuts and runtime speedups above 2× over identity layouts, particularly for highly entangled circuits."

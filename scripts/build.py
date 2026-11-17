@@ -175,22 +175,28 @@ def build_publications(cfg, cache, pubs):
         if r["id"] in excluded:
             continue
         o = pubs["overrides"].get(r["id"], {})
-        peer = bool(r["journal_ref"] or r["doi"])
+        doi = r["doi"] or o.get("doi")
+        peer = bool(r["journal_ref"] or doi or o.get("group") == "peer")
         links = [{"label": "arXiv", "url": f"https://arxiv.org/abs/{r['id']}"},
                  {"label": "PDF", "url": f"https://arxiv.org/pdf/{r['id']}"}]
-        if r["doi"]:
-            links.append({"label": "DOI", "url": f"https://doi.org/{r['doi']}"})
+        if doi:
+            links.append({"label": "DOI", "url": f"https://doi.org/{doi}"})
+        if o.get("publisher_url"):
+            links.append({"label": "Publisher version", "url": o["publisher_url"]})
         if o.get("explainer"):
             links.append({"label": "Interactive explainer", "url": o["explainer"]})
+        if o.get("video"):
+            links.append({"label": "Video explainer", "url": f"papers/{r['id']}.html#video"})
         links += o.get("links", [])
         out.append({
+            "video": o.get("video"),
             "key": r["id"], "arxiv": r["id"], "group": o.get("group", "peer" if peer else "preprint"),
             "type": "article" if peer else "misc",
-            "year": int(r["published"][:4]), "date": r["published"], "updated": r["updated"],
+            "year": o.get("year", int(r["published"][:4])), "date": r["published"], "updated": r["updated"],
             "title": o.get("title", r["title"]), "authors": r["authors"],
             "venue": o.get("venue", r["journal_ref"] or f"arXiv:{r['id']} [{r['category']}]"),
             "summary": o.get("summary", ""), "abstract": r["abstract"],
-            "category": r["category"], "doi": r["doi"], "links": links,
+            "category": r["category"], "doi": doi, "links": links,
             "page": f"papers/{r['id']}.html",
         })
     for m in pubs["manual"]:
@@ -258,13 +264,26 @@ def pub_item(p, cfg, prefix=""):
         f'              <a href="{esc(prefix + l["url"] if not re.match(r"^[a-z]+:", l["url"]) else l["url"])}">'
         f'{esc(l["label"])}<span class="sr-only">: {esc(p["title"])}</span></a>' for l in p["links"])
     bib = esc(bibtex(p))
+    v = p.get("video")
+    video_fig = ""
+    if v:
+        thumb = v["poster"].replace("-poster.", "-thumb.")
+        video_fig = f"""            <figure class="vidcard">
+              <a href="{prefix}{p['page']}#video">
+                <img src="{prefix}{esc(thumb)}" width="480" height="270" loading="lazy" decoding="async"
+                     alt="Preview of the video explainer for this paper. Opens the video.">
+                <span class="vidcard-play" aria-hidden="true"></span>
+              </a>
+              <figcaption><a href="{prefix}{p['page']}#video">Watch the video explainer</a> · {esc(v['length_label'])}</figcaption>
+            </figure>
+"""
     return f"""        <li class="pub" id="{anchor}">
           <span class="year">{p['year']}</span>
           <div>
             <p class="pub-title">{title}</p>
             <p class="pub-authors">{authors_html(p['authors'], cfg)}</p>
             <p class="pub-venue">{esc(p['venue'])}</p>
-{f'            <p class="pub-abstract">{esc(text)}</p>' + chr(10) if text else ''}            <p class="pub-links">
+{f'            <p class="pub-abstract">{esc(text)}</p>' + chr(10) if text else ''}{video_fig}            <p class="pub-links">
 {links}
             </p>
             <details class="cite">
@@ -352,6 +371,26 @@ def paper_page(p, cfg):
         "author": [{"@type": "Person", "name": a, **({"url": cfg["site_url"] + "/"} if is_me(a, cfg) else {})}
                    for a in p["authors"]],
     }, ensure_ascii=False, indent=2)
+    v = p.get("video")
+    video_html = ""
+    if v:
+        ld_v = json.dumps({
+            "@context": "https://schema.org", "@type": "VideoObject", "name": v["title"],
+            "description": v["description"], "uploadDate": v["upload_date"], "duration": v["duration"],
+            "thumbnailUrl": f"{cfg['site_url']}/{v['poster']}", "contentUrl": f"{cfg['site_url']}/{v['src']}",
+            "inLanguage": v.get("lang", "en"), "caption": f"{cfg['site_url']}/{v['captions']}", "isPartOf": {"@id": url},
+        }, ensure_ascii=False, indent=2)
+        ld += "\n  </script>\n  <script type='application/ld+json'>\n" + ld_v
+        video_html = f"""  <h2 id="video">Video explainer</h2>
+  <figure class="paper-video">
+    <video controls preload="none" playsinline width="1280" height="720" poster="../{esc(v['poster'])}">
+      <source src="../{esc(v['src'])}" type="video/mp4">
+      <track kind="captions" src="../{esc(v['captions'])}" srclang="en" label="English" default>
+      Your browser cannot play this video. <a href="../{esc(v['src'])}">Download the MP4</a>.
+    </video>
+    <figcaption>{esc(v['description'])} ({esc(v['length_label'])}, AI-generated narration, with captions.) <a href="../dqr-explainer.html">Try the interactive explainer</a>.</figcaption>
+  </figure>
+"""
     links = " ".join(f'<a href="{esc(l["url"] if re.match(r"^[a-z]+:", l["url"]) else "../" + l["url"])}">{esc(l["label"])}</a>'
                      for l in p["links"])
     desc = p["summary"] or p["abstract"]
@@ -382,7 +421,7 @@ def paper_page(p, cfg):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css?v=3">
+  <link rel="stylesheet" href="../style.css?v=4">
   <script type="application/ld+json">
 {ld}
   </script>
@@ -420,11 +459,11 @@ def paper_page(p, cfg):
   </nav>
 </header>
 <main class="paper" id="main">
-  <p class="paper-kind">{'Article' if p['group'] == 'peer' else 'Preprint'} · {esc(p['venue'])} · {month_label(p['date'])}</p>
+  <p class="paper-kind">{f"Article · {esc(p['venue'])} · {p['year']} · preprint arXiv:{p['arxiv']}" if p['group'] == 'peer' and p['doi'] else f"{'Article' if p['group'] == 'peer' else 'Preprint'} · {esc(p['venue'])} · {month_label(p['date'])}"}</p>
   <h1>{esc(p['title'])}</h1>
   <p class="pub-authors">{authors_html(p['authors'], cfg)}</p>
   <p class="pub-links">{links}</p>
-  <h2>Abstract</h2>
+{video_html}  <h2>Abstract</h2>
   <p class="paper-abstract">{esc(p['abstract'])}</p>
   <h2>Cite</h2>
   <pre id="bib">{esc(bibtex(p))}</pre>

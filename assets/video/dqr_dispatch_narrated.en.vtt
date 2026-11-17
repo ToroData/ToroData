@@ -1,0 +1,43 @@
+WEBVTT
+
+00:00.000 --> 00:06.000
+DQR is a runtime for circuit-cut quantum jobs on HPC and quantum hardware.
+
+00:06.000 --> 00:10.000
+A 32-qubit circuit turns into 72 independent fragments.
+
+00:10.000 --> 00:15.000
+Each fragment is an immutable descriptor, so DQR never reads quantum code.
+
+00:15.000 --> 00:20.000
+A label hints where each fragment runs, and the router may override it.
+
+00:20.000 --> 00:24.000
+Dispatch runs in waves. Rank 0 sends each fragment to the next free worker,
+
+00:24.000 --> 00:27.000
+and each result lands in GPFS.
+
+00:27.000 --> 00:35.000
+The local QPU rejects two fragments. DQR will try once more, then move them to HPC without restarting.
+
+00:35.000 --> 00:41.000
+Polling never blocks, so new waves keep dispatching while earlier fragments are still running.
+
+00:41.000 --> 00:48.000
+With a single QPU slot, workers idle while the quantum path drains. Slot count is the key lever.
+
+00:48.000 --> 00:57.000
+DQR then recombines the 72 values into the full observable, consistent with the CPU reference.
+
+00:57.000 --> 01:02.000
+The same dispatcher can target another backend. Here, IBM Torino.
+
+01:02.000 --> 01:08.000
+On the cloud QPU, slot count sets the critical path. Three slots need five rounds and 91 seconds.
+
+01:08.000 --> 01:12.000
+Twenty slots need two rounds and about 60 seconds.
+
+01:12.000 --> 01:18.200
+DQR: fragments as the unit of scheduling for hybrid HPC and quantum computing.

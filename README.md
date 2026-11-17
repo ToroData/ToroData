@@ -48,6 +48,13 @@ Interactive [research map](https://raigada-garcia.dev/research-map.html).
 Full list on [ORCID](https://orcid.org/0009-0009-9684-4745). This section is generated from arXiv by `scripts/build.py`.
 
 <!-- BUILD:README-PUBLICATIONS -->
+### Peer-reviewed
+
+- **2027** — **Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems**<br>
+  ***Ricard S. García-Raigada***, Josep Jorba, Sergio Iserte<br>
+  *Future Generation Computer Systems 189, 108903*<br>
+  [arXiv](https://arxiv.org/abs/2604.15279) · [PDF](https://arxiv.org/pdf/2604.15279) · [DOI](https://doi.org/10.1016/j.future.2026.108903) · [Publisher version](https://www.sciencedirect.com/science/article/pii/S0167739X26005376) · [Interactive explainer](https://raigada-garcia.dev/dqr-explainer.html) · [Video explainer](https://raigada-garcia.dev/papers/2604.15279.html#video)
+
 ### Preprints
 
 - **2026** — **Enabling Dynamic Resource Scaling in Quantum Circuit Simulations**<br>
@@ -59,11 +66,6 @@ Full list on [ORCID](https://orcid.org/0009-0009-9684-4745). This section is gen
   Íñigo Aréjula-Aísa, Sergio Iserte, Petter Sandås, ***Ricard S. Raigada-García***, Antonio J. Peña<br>
   *arXiv:2610.09659 [cs.DC]*<br>
   [arXiv](https://arxiv.org/abs/2610.09659) · [PDF](https://arxiv.org/pdf/2610.09659)
-
-- **2026** — **Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems**<br>
-  ***Ricard S. García-Raigada***, Josep Jorba, Sergio Iserte<br>
-  *arXiv:2604.15279 [cs.DC]*<br>
-  [arXiv](https://arxiv.org/abs/2604.15279) · [PDF](https://arxiv.org/pdf/2604.15279) · [Interactive explainer](https://raigada-garcia.dev/dqr-explainer.html)
 
 ### Theses, reports & other works
 

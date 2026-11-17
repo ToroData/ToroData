@@ -4,8 +4,14 @@
   <link href="https://raigada-garcia.dev/feed.xml" rel="self"/>
   <link href="https://raigada-garcia.dev/"/>
   <id>https://raigada-garcia.dev/</id>
-  <updated>2026-10-31T00:00:00Z</updated>
+  <updated>2026-11-17T00:00:00Z</updated>
   <author><name>Ricard S. Raigada-García</name></author>
+  <entry>
+    <title>Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems is now published in Future Generation Computer Systems 189 (2027), with a video explainer.</title>
+    <id>tag:raigada-garcia.dev,2026-11-17:wave-based-dispatch-for-circuit-cutting-in-hybrid-hpc-quantu</id>
+    <link href="https://raigada-garcia.dev/papers/2604.15279.html"/>
+    <updated>2026-11-17T00:00:00Z</updated>
+  </entry>
   <entry>
     <title>Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems accepted for publication in FCGS (October 2026).</title>
     <id>tag:raigada-garcia.dev,2026-10-31:wave-based-dispatch-for-circuit-cutting-in-hybrid-hpc-quantu</id>

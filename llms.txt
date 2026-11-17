@@ -39,10 +39,12 @@ R. S. Raigada García, R. S. Raigada-García, Ricard García-Raigada.
   Antonio J. Peña. Communication-aware qubit-layout framework with automatic
   node-count selection; speedups above 2× on synthetic and QASMBench circuits.
 - [Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems](https://raigada-garcia.dev/papers/2604.15279.html):
-  arXiv:2604.15279 (2026), accepted in FCGS, October 2026. With Josep Jorba,
+  Future Generation Computer Systems 189, 108903 (2027),
+  doi:10.1016/j.future.2026.108903 (preprint arXiv:2604.15279). With Josep Jorba,
   Sergio Iserte. DQR, a runtime that treats circuit-cutting fragments as
   schedulable units; evaluated on CESGA Qmio with IBM Torino and classical
-  simulators.
+  simulators. Video explainer (78 s):
+  https://raigada-garcia.dev/papers/2604.15279.html#video
 - Emergent Geometrodynamic Intelligence in Transformers (Zenodo, 2025):
   https://doi.org/10.5281/zenodo.15772617
 - Quantum Database Architecture for the Quantum Data Scientist (MSc thesis,
